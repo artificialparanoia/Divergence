@@ -1,0 +1,690 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "DREAMWORLD",
+    "removeChildren": [
+        "Sector_DreamWorld/BellWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/BellWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/BellWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/BellWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/BellWarpReceiver/WhiteHoleRenderer",
+        "Sector_DreamWorld/CellarWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/CellarWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/CellarWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/CellarWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/CellarWarpReceiver/WhiteHoleRenderer",
+        "Sector_DreamWorld/TowerWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/TowerWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/TowerWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/TowerWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/TowerWarpReceiver/WhiteHoleRenderer",
+        "Sector_DreamWorld/CanyonWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/CanyonWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/CanyonWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/CanyonWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/CanyonWarpReceiver/WhiteHoleRenderer",
+        "Sector_DreamWorld/GrasslandsWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/GrasslandsWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/GrasslandsWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/GrasslandsWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/GrasslandsWarpReceiver/WhiteHoleRenderer"
+    ],
+    "Props": {
+        "dialogue": [
+            {
+                "range": 2,
+                "radius": 2,
+                "xmlFile": "planets/Dialogue/Computers/Mainframe.xml",
+                "position": {
+                    "x": -31.05546,
+                    "y": 24.4664,
+                    "z": -186.142
+                }
+            },
+          {
+            "range": 2,
+            "radius": 0,
+            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Woodlands.xml",
+            "position": {
+              "x": 121.6995,
+              "y": -293.4243,
+              "z": 512.9449
+            },
+            "remoteTriggerPosition": {
+              "x": 122.1596,
+              "y": -296.0399,
+              "z": 510.9233
+            },
+            "remoteTriggerRadius": 2,
+            "remoteTriggerPrereqCondition": "CodeComputersActive"
+          },
+          {
+            "range": 2,
+            "radius": 0,
+            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Cove.xml",
+            "position": {
+              "x": -11.67976,
+              "y": -277.4807,
+              "z": 368.8798
+            },
+            "remoteTriggerPosition": {
+              "x": -9.542465,
+              "y": -280,
+              "z": 368.9035
+            },
+            "remoteTriggerRadius": 2,
+            "remoteTriggerPrereqCondition": "CodeComputersActive"
+          },
+          {
+            "range": 2,
+            "radius": 0,
+            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Canyon.xml",
+            "position": {
+              "x": -147.5223,
+              "y": -277.5885,
+              "z": 466.0355
+            },
+            "remoteTriggerPosition": {
+              "x": -146.0027,
+              "y": -280.5703,
+              "z": 468.7755
+            },
+            "remoteTriggerRadius": 2,
+            "remoteTriggerPrereqCondition": "CodeComputersActive"
+          }
+        ],
+        "singularities": [
+            {
+                "type": "blackHole",
+               "uniqueID": "MainframeWarpStart",
+                "position": {
+                    "x": -4.503479,
+                    "y": -303.7763,
+                    "z": 662.3726
+                },
+                "pairedSingularity": "MainframeWarpEnd",
+                "horizonRadius": 4,
+                "rename": "BellWarpSender"
+            },
+          {
+            "type": "whiteHole",
+            "uniqueID": "MainframeWarpEnd",
+            "size": 2,
+            "position": {
+              "x": -36.33024,
+              "y": 25.36497,
+              "z": -188.9844
+            },
+            "pairedSingularity": "MainframeWarpStart",
+            "rename": "BellWarpReceiver"
+          },
+          {
+            "type": "blackHole",
+            "uniqueID": "CellarWarpStart",
+            "size": 2,
+            "position": {
+              "x": -65.68224,
+              "y": 58.4287,
+              "z": 267.89
+            },
+            "pairedSingularity": "CellarWarpEnd",
+            "rename": "CellarWarpSender"
+          },
+          {
+            "type": "whiteHole",
+            "uniqueID": "CellarWarpEnd",
+            "size": 2,
+            "position": {
+              "x": -25.9556,
+              "y": 25.36497,
+              "z": -188.9844
+            },
+            "pairedSingularity": "CellarWarpStart",
+            "rename": "CellarWarpReceiver"
+          },
+          {
+            "type": "blackHole",
+            "uniqueID": "TowerWarpStart",
+            "size": 2,
+            "position": {
+              "x": -31.19398,
+              "y": 25.91571,
+              "z": -179.9402
+            },
+            "pairedSingularity": "TowerWarpEnd",
+            "rename": "TowerWarpSender"
+          },
+          {
+            "type": "whiteHole",
+            "uniqueID": "TowerWarpEnd",
+            "size": 2,
+            "position": {
+              "x": -31.14455,
+              "y": 49.67508,
+              "z": -185.9736
+            },
+            "pairedSingularity": "TowerWarpStart",
+            "rename": "TowerWarpReceiver"
+          },
+          {
+            "type": "blackHole",
+            "uniqueID": "CanyonWarpStart",
+            "size": 2,
+            "position": {
+              "x": -25.98257,
+              "y": 25.94884,
+              "z": -182.908
+            },
+            "pairedSingularity": "CanyonWarpEnd",
+            "rename": "CanyonWarpSender"
+          },
+          {
+            "type": "whiteHole",
+            "uniqueID": "CanyonWarpEnd",
+            "size": 2,
+            "position": {
+              "x": 26.3176,
+              "y": 95.7388,
+              "z": 206.9578
+            },
+            "pairedSingularity": "CanyonWarpStart",
+            "rename": "CanyonWarpReceiver"
+          },
+          {
+            "type": "blackHole",
+            "uniqueID": "GrasslandsWarpStart",
+            "size": 2,
+            "position": {
+              "x": -36.3603,
+              "y": 26.06024,
+              "z": -182.9476
+            },
+            "pairedSingularity": "GrasslandsWarpEnd",
+            "rename": "GrasslandsWarpSender"
+          },
+          {
+            "type": "whiteHole",
+            "uniqueID": "GrasslandsWarpEnd",
+            "size": 2,
+            "position": {
+              "x": -67.0376,
+              "y": 12.75998,
+              "z": -595.0421
+            },
+            "pairedSingularity": "GrasslandsWarpStart",
+            "rename": "GrasslandsWarpReceiver"
+          }
+        ],
+        "details": [
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_GrappleTotem",
+                "position": {
+                    "x": 25.81277,
+                    "y": 20.46771,
+                    "z": 632.7317
+                },
+                "rotation": {
+                    "x": 338.5628,
+                    "y": 149.6011,
+                    "z": 6.287848
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_DreamZone_2/Structure_DreamZone_2/DreamFireHouse_2/Interactibles_DreamFireHouse_2/Prefab_IP_DreamArrivalPoint_Zone2",
+                "position": {
+                    "x": -31.18409,
+                    "y": 22.86298,
+                    "z": -185.9917
+                }
+            },
+            {
+                "scale": 1.1,
+                "path": "Sector_DreamWorld/Sector_DreamZone_1/Structures_DreamZone_1/Generic_House_A/Prefab_IP_DW_Door_NoInterface",
+                "position": {
+                    "x": -32.7355,
+                    "y": 22.8155,
+                    "z": -193.3447
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 355.429,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_A/Island_A/Interactibles_Island_A/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_01",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_A/Island_A/Interactibles_Island_A/Prefab_IP_DW_CodeTotem/CodeDisplay/Effects_IP_SIM_CodeTotem/CodeTotem_IconIndicator",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                },
+                "parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Simulation_DreamZone_2/Effects_Zone2",
+                "keepLoaded": true,
+                "rename": "WarpIcon1"
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_B/Island_B/Interactibles_Island_B/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_02",
+                "position": {
+                    "x": -31.1234,
+                    "y": 26.95146,
+                    "z": -180.0639
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_C/Island_C/Interactibles_Island_C/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_03",
+                "position": {
+                    "x": -25.9872,
+                    "y": 26.95146,
+                    "z": -182.9565
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 60,
+                    "z": 0
+                }
+            },
+            {
+                "path": "Sector_DreamWorld/Prefab_IP_VisionTorchProjector/VisionBeam",
+                "removeComponents": false,
+                "scale": 4.25,
+                "position": {
+                    "x": -31.19862,
+                    "y": 30.40617,
+                    "z": -185.9574
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 238.635,
+                    "z": 180
+                }
+            },
+          {
+            "scale": 1,
+            "position": {
+              "x": -3.5036,
+              "y": 10.3076,
+              "z": 698.916
+            },
+            "rotation": {
+              "x": 354.4057,
+              "y": 47.4029,
+              "z": 356.12
+            },
+            "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
+            //"parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior/Prefab_IP_VisionTorchProjector",
+            "keepLoaded": true
+            //"isRelativeToParent": false
+          },
+          {
+            "scale": 1,
+            "position": {
+              "x": -27.8238,
+              "y": 33.9664,
+              "z": -191.37
+            },
+            "rotation": {
+              "x": 354.8344,
+              "y": 317.5115,
+              "z": 0
+            },
+            "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
+            //"parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior/Prefab_IP_VisionTorchProjector",
+            "keepLoaded": true
+            //"isRelativeToParent": false
+          },
+          {
+            "scale": 0.25,
+            "position": {
+              "x": -31.1553,
+              "y": 30.8336,
+              "z": -185.9663
+            },
+            "rotation": {
+              "x": 90,
+              "y": 238.635,
+              "z": 180
+            },
+            "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch/Effects_IP_SIM_GhostBirdVisionConeFocused",
+            "keepLoaded": true
+            //"isRelativeToParent": false
+          }
+        ],
+        "slideShows": [
+          {
+            "type": "standingVisionTorch",
+            "slides": [
+              {
+                "imagePath": "graphics/slides/bell_warp/(1).png",
+                "backdropAudio": "Reel_Secret_Backdrop_B",
+                "backdropFadeTime": 2,
+                "blackFrameDuration": 0.5
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(2).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(3).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(4).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(5).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(6).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(7).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(8).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(9).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(10).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(11).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(12).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(13).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(14).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(15).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(16).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(17).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(18).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(19).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(20).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(21).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(22).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(23).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(24).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(25).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(26).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(27).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(28).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(29).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(30).png"
+              },
+              {
+                "imagePath": "graphics/slides/bell_warp/(31).png"
+              }
+            ],
+            "position": {
+              "x": -27.8238,
+              "y": 33.9664,
+              "z": -191.37
+            },
+            "rotation": {
+              "x": 354.8344,
+              "y": 317.5115,
+              "z": 0
+            },
+            "reveals": [ "IP_ENTRANCE_LAKE" ],
+            "playWithShipLogFacts": [ "IP_ENTRANCE_LAKE" ]
+          },
+            {
+                "type": "standingVisionTorch",
+                "position": {
+                    "x": -3.5036,
+                    "y": 10.3076,
+                    "z": 698.916
+                },
+                "rotation": {
+                    "x": 354.4057,
+                    "y": 47.4029,
+                    "z": 356.12
+                },
+                "slides": [
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(1).png",
+                        "backdropFadeTime": 2,
+                        "backdropAudio": "Reel_Secret_Backdrop_A",
+                        "blackFrameDuration": 0.25
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(2).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(3).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(4).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(5).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(6).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(7).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(8).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(9).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(10).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(11).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(12).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(13).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(14).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(15).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(16).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(17).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(18).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(19).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(20).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(21).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(22).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(23).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(24).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(25).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(26).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(27).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(28).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(29).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(30).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(31).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(32).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(33).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(34).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(35).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(36).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(37).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(38).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(39).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(40).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(41).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(42).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(43).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(44).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(45).png"
+                    },
+                    {
+                        "imagePath": "graphics/slides/cellar_warp/(46).png"
+                    }
+                ],
+              "parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
+              "reveals": [ "IP_ENTRANCE_CELLAR" ],
+              "playWithShipLogFacts": [ "IP_ENTRANCE_CELLAR" ]
+            }
+        ]
+    },
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "layer": 0,
+        "priority": 1,
+        "clipSelection": "sequential",
+        "track": "music",
+        "loop": false,
+        "volume": 0.65,
+        "fadeSeconds": 2,
+        "radius": 5,
+        "audio": "SecretLibrary",
+        "position": {
+          "x": -31.05546,
+          "y": 24.4664,
+          "z": -186.142
+        }
+      }
+    ],
+    "revealVolumes": [
+      {
+        "maxAngle": 180,
+        "maxDistance": -1,
+        "revealOn": "enter",
+        "revealFor": "player",
+        "radius": 5,
+        "position": {
+          "x": -31.05546,
+          "y": 24.4664,
+          "z": -186.142
+        },
+        "reveals": [ "IP_MAINFRAME_INFO", "IP_MAINFRAME_WARPGATES" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"entryPositions": [
+		{
+			"id": "IP_DREAMWORLD_MAINFRAME",
+			"position": {
+				"x": 3748.781,
+				"y": -531.0853
+			}
+		},
+		{
+			"id": "IP_ACETATE_LOGS",
+			"position": {
+				"x": 3153.235,
+				"y": -431.1007
+			}
+		},
+		{
+			"id": "IP_TOWER_SIGNALS",
+			"position": {
+				"x": 3384.931,
+				"y": -558.8943
+			}
+		},
+		{
+			"id": "IP_CODECOMPUTER_WOODLANDS",
+			"position": {
+				"x": 3629.822,
+				"y": -682.1013
+			}
+		},
+		{
+			"id": "IP_CODECOMPUTER_COVE",
+			"position": {
+				"x": 3749.421,
+				"y": -684.075
+			}
+		},
+		{
+			"id": "IP_CODECOMPUTER_CANYON",
+			"position": {
+				"x": 3869.565,
+				"y": -677.2763
+			}
+		},
+		{
+			"id": "IP_ACETATE_VISION_TORCHES",
+			"position": {
+				"x": 3437.558,
+				"y": -314.3854
+			}
+		},
+		{
+			"id": "QM_TRANSPORT_PILGRIM",
+			"position": {
+				"x": 4078.604,
+				"y": -400
+			}
+		},
+		{
+			"id": "TH_DEEP_SPACE",
+			"position": {
+				"x": 2092.342,
+				"y": -341.5549
+			}
+		}
+	],
+	"curiosities": [
+		{
+			"id": "IP_DREAMWORLD_MAINFRAME",
+			"color": {
+				"r": 0,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 132,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		}
+	]
+}

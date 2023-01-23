@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "QUANTUM_MOON",
+    "Props": {
+        "signals": [
+            {
+                "identificationRadius": 1000,
+                "onlyAudibleToScope": true,
+                "reveals": "QM_TRANSPORT_SIXTHLOCATION",
+                "position": {
+                    "x": 0.2688,
+                    "y": -191.9692,
+                    "z": -0.3622
+                },
+                "detectionRadius": 5000,
+                "insideCloak": false,
+                "sourceRadius": 20,
+                "parentPath": "Sector_QuantumMoon/State_EYE",
+                "name": "TransportPilgrimQM",
+                "frequency": "DreamSignal",
+                "audio": "audio/test_audio_distress.wav"
+            }
+        ]
+    },
+    "ShipLog": {
+        "xmlFile": "planets/ShipLogs/QuantumMoon.xml",
+        "spriteFolder": "planets/ShipLogs/sprites"
+    }
+}

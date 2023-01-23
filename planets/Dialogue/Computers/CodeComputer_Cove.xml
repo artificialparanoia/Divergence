@@ -1,0 +1,82 @@
+<DialogueTree>
+	<NameField>Remote Signal Interface</NameField>
+
+	<DialogueNode>
+		<Name>CodeComputer_Default</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>ERROR: Cannot access Remote Signal Interface. REASON: Interface inactive.</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>SignalSelect</Name>
+		<EntryCondition>CodeComputersActive</EntryCondition>
+		<Dialogue>
+			<Page>Please select keyword for antenna signal calibration:</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>ENLIGHTENMENT.</Text>
+				<DialogueTarget>FreqRangeHigh</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>FORESIGHT.</Text>
+				<DialogueTarget>FreqRangeMedium</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>ETERNITY.</Text>
+				<DialogueTarget>FreqRangeLow</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!--Correct Node-->
+	<DialogueNode>
+		<Name>FreqRangeHigh</Name>
+		<SetCondition>FreqCorrect_Cove</SetCondition>
+		<Dialogue>
+			<Page>Calibrating using keyword ENLIGHTMENT...</Page>
+		</Dialogue>
+		<DialogueTarget>FreqConfirm</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FreqRangeMedium</Name>
+		<Dialogue>
+			<Page>Calibrating using keyword FORESIGHT...</Page>
+		</Dialogue>
+		<DialogueTarget>FreqConfirm</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FreqRangeLow</Name>
+		<Dialogue>
+			<Page>Calibrating using keyword ETERNITY...</Page>
+		</Dialogue>
+		<DialogueTarget>FreqConfirm</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FreqConfirm</Name>
+		<RevealFacts>
+			<FactID>IP_CODECOMPUTER_COVE_FACT</FactID>
+		</RevealFacts>
+		<SetCondition>HasSetFreqCove</SetCondition>
+		<Dialogue>
+			<Page>Calibration confirmed. Awaiting input from mainframe...</Page>
+		</Dialogue>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>CodeComputer_Final</Name>
+		<EntryCondition>HasSetFreqCove</EntryCondition>
+		<Dialogue>
+			<Page>Awaiting input from mainframe...</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	
+
+</DialogueTree>

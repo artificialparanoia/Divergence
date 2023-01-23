@@ -1,0 +1,465 @@
+<DialogueTree>
+	<NameField>Riebeck</NameField>
+
+	<DialogueNode>
+		<Name>Riebeck0</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<SetCondition>TalkToRiebeck</SetCondition>
+		<RevealFacts><FactID>BH_RIEBECK_X1</FactID></RevealFacts>
+		<Dialogue>
+			<Page>Oh, you launched! That’s great. Great job, you.</Page>
+			<Page>Wow, I guess that means I’ve been out here a while, huh. Well, um, this is Brittle Hollow. But you probably knew that.</Page>
+			<Page>Lot of history here. ...It’s great.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What are you doing here?</Text>
+				<DialogueTarget>RiebeckIntro</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>MET_RIEBECK</RequiredPersistentCondition>
+				<Text>I’m in a hurry — can I ask you something?</Text>
+				<DialogueTarget>RiebeckHurryToQuestions</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckIntro</Name>
+		<SetPersistentCondition>MET_RIEBECK</SetPersistentCondition>
+		<Dialogue>
+			<Page>I’m here to see the Hanging City. It’s always been my dream to see it with my own four eyes, ever since I was a hatchling.</Page>
+			<Page>An alien race lived in this solar system long before our species even existed! How could I <![CDATA[<i>]]>not<![CDATA[</i>]]> want to see what their civilization was like?</Page>
+			<Page>Only...</Page>
+			<Page>You’ve... probably heard the others say it, right? I’m afraid of space. Seriously, I’m more surprised than anybody that I’m out here.</Page>
+			<Page>Do you want to know how I even got this far? I fell. Tripped over a gravity crystal. It’s dumb luck I landed somewhere my Little Scout says is halfway stable, instead of being sucked into... <![CDATA[<i>]]>what’s below<![CDATA[</i>]]>.</Page>
+			<Page>I’ve been gauging the stability of the ground around me using my Little Scout, and this seems to be the place with the best surface integrity, so I’m just going to stay here until I’m ready to move on.</Page>
+			<Page>...But that’s enough about me and my problems. You didn’t come all this way to listen to me blather, did you! Heh, that’d be... yeah.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Riebeck1</Name>
+		<EntryCondition>TalkToRiebeck</EntryCondition>
+		<Dialogue>
+			<Page>Hi! ...What’s up?</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>RiebeckHurryToQuestions</Name>
+		<Dialogue>
+			<Page>Um, sure — of course! Anything you want.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Questions</Name>
+		<Dialogue>
+			<Page>
+				
+			</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I learned something!</Text>
+				<DialogueTarget>RiebeckLearned</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where should I explore here?</Text>
+				<DialogueTarget>RiebeckExplore</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What are you doing out here?</Text>
+				<DialogueTarget>RiebeckArcheologist</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>KnowsAboutRingworld</RequiredCondition>
+				<Text>Are you okay?</Text>
+				<DialogueTarget>RiebeckPostRingworld</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckArcheologist</Name>
+		<Dialogue>
+			<Page>Me? I’m an archeologist, remember?</Page>
+			<Page>Or, um, <![CDATA[<i>]]>the<![CDATA[</i>]]> archeologist, I guess. Seeing as I’m all Timber Hearth’s got right now.</Page>
+			<Page>Brittle Hollow is rich with Nomai history. That’s why I’m here. This planet is an absolute treasure trove of culture, history, and science.</Page>
+			<Page>If you have any questions about the Brittle Hollow Nomai, I’m your Hearthian! Or, um... I have some knowledge of them, I mean. So. <![CDATA[<size=20>]]>Maybe I can help?<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<RevealFacts><FactID>BH_RIEBECK_X2</FactID></RevealFacts>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckExplore</Name>
+		<Dialogue>
+			<Page>Oh wow, where <![CDATA[<i>]]>shouldn’t<![CDATA[</i>]]> you explore here?<![CDATA[<Pause>]]> Um, not the <![CDATA[<size=20>]]>black hole<![CDATA[</size>]]>, actually. That’s... very no.</Page>
+			<Page>Which is unfortunate, because uh, the most exciting stuff is all below the crust. Including the <![CDATA[<color=orange>Hanging City</color>]]> — that’s just to the north. You can kinda see it from here.</Page>
+			<Page>There’s also this big dome on the south pole called the <![CDATA[<color=orange>Southern Observatory</color>]]>. You can’t get inside from the surface — trust me, I tried — but if it’s like the rest of the Nomai structures here, there’s probably a path to it beneath the crust somewhere.</Page>
+			<Page>Good luck with exploring. Um, if you learn anything about the Nomai, I’d love to hear it, <![CDATA[<size=20>]]>if it’s not too much trouble?<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>BH_HANGING_CITY_R2</FactID>
+			<FactID>BH_OBSERVATORY_R3</FactID>
+		</RevealFacts>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned</Name>
+		<Dialogue>
+			<Page>Oh, cool! <![CDATA[<Pause/>]]>Um, what is it?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredLogCondition>BH_ESCAPE_POD_X1</RequiredLogCondition>
+				<Text>I found the Nomai escape pod on Brittle Hollow.</Text>
+				<DialogueTarget>RiebeckLearned_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>DB_VESSEL_X1</RequiredLogCondition>
+				<Text>I found the Vessel!</Text>
+				<DialogueTarget>RiebeckLearned_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>BH_OLD_SETTLEMENT_X1</RequiredLogCondition>
+				<Text>I saw the old settlement.</Text>
+				<DialogueTarget>RiebeckLearned_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>BH_HANGING_CITY_X1</RequiredLogCondition>
+				<Text>I saw the Hanging City on Brittle Hollow.</Text>
+				<DialogueTarget>RiebeckLearned_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>CT_SUNLESS_CITY_X1</RequiredLogCondition>
+				<Text>I saw the Sunless City on Ember Twin.</Text>
+				<DialogueTarget>RiebeckLearned_5</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>BH_QUANTUM_RESEARCH_TOWER_X2</RequiredLogCondition>
+				<Text>I found Nomai writing about a quantum pilgrimage.</Text>
+				<DialogueTarget>RiebeckLearned_6</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>COMET_INTERIOR_X1</RequiredLogCondition>
+				<Text>I went to the comet, and...</Text>
+				<DialogueTarget>RiebeckLearned_7</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>MET_SOLANUM</RequiredPersistentCondition>
+				<Text>I TALKED TO A LIVING NOMAI!</Text>
+				<DialogueTarget>RiebeckLearned_8</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
+				<Text>I found an alien civilization hidden in our solar system!</Text>
+				<DialogueTarget>RiebeckLearned_9</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Actually, nevermind.</Text>
+				<DialogueTarget>RiebeckLearned_Exit</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_Exit</Name>
+		<Dialogue>
+			<Page>Oh, okay. If you do learn something new about the Nomai, though, I’d love to hear it! Um, if you don’t mind, I mean.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_1</Name>
+		<Dialogue>
+			<Page>Wow! So then, the Nomai probably came here from somewhere outside the solar system. And they must have been in trouble when they launched their escape pod... but what kind of trouble?</Page>
+			<Page>And where did the escape pod launch from? I’m so curious!</Page>
+			<Page>This is an amazing discovery. I hope we can find out more about how and why the Nomai arrived here!</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_2</Name>
+		<!--This replaces RiebeckLearned_1 and that menu option once the player finds it.-->
+		<Dialogue>
+			<Page>You did?! That, that’s incredible, congratulations!</Page>
+			<Page>That means they really <![CDATA[<i>]]>were<![CDATA[</i>]]> from far outside our solar system. Haha, <![CDATA[<i>]]>yes<![CDATA[</i>]]>! I knew it!</Page>
+			<Page>But that creates so many new questions! If they didn’t come from our solar system, where did they come from? Are they from our galaxy, or somewhere even farther? What were their lives like before they came here? And <![CDATA[<i>]]>why<![CDATA[</i>]]> did they come here?</Page>
+			<Page>Hey, I... I might not be much of an astronaut, but I’m really glad I came out here to see the Nomai’s artifacts for myself. And, um, thanks for telling me. <![CDATA[<Pause/>]]>About the Vessel, I mean.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_3</Name>
+		<Dialogue>
+			<Page>Isn’t it amazing? Hard to believe the settlement is still standing, but there it is.</Page>
+			<Page>It really makes you appreciate living somewhere like Timber Hearth. You know, somewhere that isn’t being constantly bombarded with meteors and rocks and stuff.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_4</Name>
+		<Dialogue>
+			<Page>You visited the Hanging City? Oh gosh, how was it? Was it amazing? Was it beautiful? ...Was it scary?</Page>
+			<Page>The Hanging City is where the Nomai settled permanently on Brittle Hollow. It was their most advanced settlement here!</Page>
+			<Page>Why they chose to build their most advanced settlement so close to a <![CDATA[<i>]]>you-know-what<![CDATA[</i>]]> is beyond me. Maybe that kind of thing makes sense to a Nomai, though. ...Maybe they needed the <![CDATA[<size=20>]]>black hole<![CDATA[</size>]]> for something?</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_5</Name>
+		<Dialogue>
+			<Page>You mean there’s another Nomai city <![CDATA[<i>]]>inside<![CDATA[</i>]]> of Ember Twin? That’s incredible! A whole city, and I had no idea it existed! This is great!</Page>
+			<Page>How did they keep the sand out? If it were me, I’d be nervous about getting buried in the caves by that awful river of sand. Gosh, the Nomai sure were ingenius, building an entire settlement underground. The Sunless City! ...Wow!</Page>
+			<Page>That means there were two groups of Nomai — one that lived on Ember Twin, and one that lived here on Brittle Hollow. But they must have traveled around the solar system, since Nomai writing can be found on other planets, too.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_6</Name>
+		<Dialogue>
+			<Page>A pilgrimage to the Quantum Moon? The Nomai mentioned the Quantum Moon in a lot of their writing, so it was clearly special to them. And um, special enough to make a trip there by themselves!</Page>
+			<Page>It sounds like a coming-of-age ritual, like how hatchlings stay hatchlings until their stomachs are strong enough to drink sap wine.</Page>
+			<Page>Maybe once a Nomai journeyed to the Quantum Moon, they were considered an adult?</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_7</Name>
+		<Dialogue>
+			<Page>Oh, wow. <![CDATA[<i>]]>Wow.<![CDATA[</i>]]> So that’s how the Nomai died?</Page>
+			<Page>That’s... really sad, isn’t it? I know it was a long time ago, but still...</Page>
+			<Page>Stars above, it’s lucky we hadn’t evolved to live on land yet.</Page>
+			<Page>To think, if the comet hadn’t killed them, our species might have coexisted in this solar system. That would have been amazing.</Page>
+			<Page>But...</Page>
+			<Page>I guess if I hadn’t wanted to learn why the Nomai disappeared, I’d never have left Timber Hearth and come out here, or had any of these adventures.</Page>
+			<Page>...Don’t get me wrong, space is terrifying! But, you know, it has its moments.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_8</Name>
+		<Dialogue>
+			<Page>AHHH! That doesn’t make any sense! I don’t understand! I am very excited for you, though! P-please stop yelling!</Page>
+			<Page>...What? On the Quantum Moon, you said?<![CDATA[<Pause>]]> There’s a sort of-living Nomai on the Quantum Moon?!</Page>
+			<Page>WELL, WHY DIDN’T YOU SAY SO?!</Page>
+			<Page>Oh wow! <![CDATA[<i>]]>Wow<![CDATA[</i>]]>! This is the best thing that’s ever happened in the history of Outer Wilds Ventures! I can’t believe you talked to an actual Nomai!</Page>
+			<Page>Great! So I just have to go back into space, fly to the Quantum Moon with zero visibility, find a spooky ruin, and travel through a few different types of dangerous terrain to get there.</Page>
+			<Page>Okay, yeah, that’s... that’s not so bad. <![CDATA[<Pause><size=20>]]>That’s probably doable...<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckLearned_9</Name>
+		<SetCondition>KnowsAboutRingworld</SetCondition>
+		<Dialogue>
+			<Page>Woah.<![CDATA[<Pause>]]> WOAH.</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_1</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworld_1</Name>
+		<Dialogue>
+			<Page>You mean another one? Like one that wasn't the Nomai? Hidden RIGHT IN OUR SOLAR SYSTEM?!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>That's what I said, yes.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_1a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I thought you were supposed to be an expert on these things.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_1b</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_1a</Name>
+		<Dialogue>
+			<Page>Oh. Cool. <![CDATA[<Pause>]]> That's... really cool. <![CDATA[<size=20>]]>Like, really really cool.<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_1b</Name>
+		<Dialogue>
+			<Page>NOT ABOUT AN ALIEN CIVILIZATION THAT NO ONE HAS EVER DISCOVERED BEFORE!</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworld_2</Name>
+		<Dialogue>
+			<Page>Okay. So you're saying that there was this whole other secret civilization that the Nomai didn't even know about? And that you discovered them all by yourself, just now, and basically came right back here to tell me about it?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Well, I'm in a time loop, so I didn't <![CDATA[<i>]]>just<![CDATA[</i>]]> come here.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_2a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Actually I talked to Hornfels first, but I thought that you should know.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_2b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Pretty much.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_2c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_2a</Name>
+		<SetCondition>MentionedTimeLoop</SetCondition>
+		<Dialogue>
+			<Page>TIME LOOP?! WHAT TIME LOOP?! WHAT ARE YOU TALKING ABOUT?!</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_3</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_2b</Name>
+		<Dialogue>
+			<Page>Oh great, so you find the most important discovery of our species since the Nomai, immediately go to Hornfels, come right on over to Brittle Hollow, and <![CDATA[<i>]]>then<![CDATA[</i>]]> tell me that you found an alien civilization that no one has ever discovered before?  </Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Basically.</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_2c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_2c</Name>
+		<Dialogue>
+			<Page>Wow. <![CDATA[<i>]]>Wow<![CDATA[</i>]]>. Okay. Neat. That's fine. Yes.</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_3</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworld_3</Name>
+		<Dialogue>
+			<Page>Do you think that they might related to the Nomai somehow? And how could the Nomai have been here for so long and not have even known that they existed? Oh stars above, this is too much...</Page>
+			<Page>So, just to make sure that I'm getting this right. There are two different species that came before us in this system. One of them was (obviously) the Nomai, who lived here thousands of years ago if not more -- and then you have this other, mystery civilization that's been here for... how long, exactly? And this is the first we're hearing about them?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>That's about right.</Text>
+				<DialogueTarget>RiebeckRingworld_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Actually, three. You're forgetting about the Anglerfish, remember?</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_3b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>MentionedTimeLoop</RequiredCondition>
+				<Text>Not <![CDATA[<i>]]>right<![CDATA[</i>]]> now. I'm in a time loop, remember?</Text>
+				<DialogueTarget>RiebeckRingworldAnswer_3c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_3b</Name>
+		<Dialogue>
+			<Page>Oh gosh, don't remind me. Just thinking about Dark Bramble makes my stomach churn.</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworldAnswer_3c</Name>
+		<Dialogue>
+			<Page>SHUT UP ABOUT THE TIME LOOP! I don't even know what that means!</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckRingworld_4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckRingworld_4</Name>
+		<Dialogue>
+			<Page>But what do you think they were doing here? And where would they have come from if they're not from our solar system?! I have so many questions.</Page>
+			<Page>But, um, wow. That's big. And I mean <![CDATA[<i>]]>really<![CDATA[</i>]]> big. Thanks, for telling me. </Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckPostRingworld</Name>
+		<Dialogue>
+			<Page>No! I mean, yes. I mean, not really. But I am! I promise! It's just... a lot, you know? </Page>
+			<Page>I come out here to learn more about the Nomai and then I learn that there's this whole other species out there that we know nothing about, and suddenly the part of me that wants to know more about the Nomai also wants to know more about THAT species, and then the other part of me who still wants to know about the Nomai doesn't want to know more about that species, because they know that I'll end up spending my time trying to learn about THAT species without learning anything about the Nomai! Does that make any sense?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Definitely.</Text>
+				<DialogueTarget>RiebeckPostRingworld_1a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What?</Text>
+				<DialogueTarget>RiebeckPostRingworld_1b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Can't you learn about both?</Text>
+				<DialogueTarget>RiebeckPostRingworld_1c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckPostRingworld_1a</Name>
+		<Dialogue>
+			<Page>Right?!</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckPostRingworld_2</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>RiebeckPostRingworld_1b</Name>
+		<Dialogue>
+			<Page>What do you mean what? I just said what! Weren't you listening?</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckPostRingworld_2</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>RiebeckPostRingworld_1c</Name>
+		<Dialogue>
+			<Page>NO I CAN'T LEARN ABOUT BOTH! THAT WOULD BE IMPOSSIBLE!</Page>
+		</Dialogue>
+		<DialogueTarget>RiebeckPostRingworld_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RiebeckPostRingworld_2</Name>
+		<Dialogue>
+			<Page>Anyway, it's cool that you found another species and everything, but right now I think I need to just relax, sit by this campfire, and try not to think about the fact that I could be thinking about a whole other species when I'm sitting here thinking about the Nomai. For now I think it's best that we just don't talk about it anymore. <![CDATA[<size=20>]]>For my sanity.<![CDATA[</size>]]></Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,17 @@
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>AcetateLog2</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<RevealFacts>
+			<FactID>IP_ACETATE_LOG_SIGNALBLOCKER</FactID>
+			<FactID>IP_VISION_TORCHES_RUMOR_2</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Okay, so this is a bit of an interesting one. It seems that wherever this far away "satellite" is, it's still doing whatever it's doing, but the ability to directly control it from here is practically nonexistent.</Page>
+			<Page>Of course, considering how damaged the controls are, I'm not sure they even <![CDATA[<i>]]>wanted<![CDATA[</i>]]> to control it, but that's got me thinking. Could there be another way to reestablish communication somehow? And, if so, are the means to do that locked away inside that vault?</Page>
+			<Page>But the only way to get inside the vault is gone, isn't it? Did they really never intend on opening it again? I find it hard to believe that a species as advanced as this would go that far.</Page>
+			<Page>There has to be something I'm missing. If I can figure out how to open that vault, then maybe there will be a way. I have to try. Whatever they're hiding is too important for me to let go -- and if I'm not the one to find it, then who will?</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

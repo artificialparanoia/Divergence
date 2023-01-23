@@ -1,0 +1,252 @@
+<DialogueTree>
+	<NameField>Hal</NameField>
+	
+	<DialogueNode>
+		<Name>Friend1a</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, hey, it’s my favorite astronaut! Launch day at last, huh, buddy? It’s the translator tool’s inaugural flight, too! I’m so excited it’s making me nauseous.</Page>
+			<Page>Just think - you’ll be able to translate any Nomai text you want, anywhere you are. The two of us put a lot of hours into inventing that tool, so don’t break it, okay? Haha! <![CDATA[<Pause>]]>...Oh, geez. <![CDATA[<i>]]>Do not break it.<![CDATA[</i>]]></Page>
+      <Page>...Ugh, ignore me, okay? I’m just nervous. And I’m not even the one going into space! How are <![CDATA[<i>]]>you<![CDATA[</i>]]> feeling?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I’m excited!</Text>
+        <DialogueTarget>FriendExcited</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I’m terrified!</Text>
+        <DialogueTarget>FriendScared</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FriendExcited</Name>
+    <Dialogue>
+      <Page>Good! You’ve only been waiting for this day since we were hatchlings. I can’t wait to see all your training pay off!</Page>
+    </Dialogue>
+    <DialogueTarget>Friend1b</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FriendScared</Name>
+    <Dialogue>
+      <Page>Aw, don’t let me make you nervous. You’ve been training for this day since we were hatchlings, remember? You’ll do great, I promise!</Page>
+    </Dialogue>
+    <DialogueTarget>Friend1b</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Friend1b</Name>
+    <Dialogue>
+       <Page>So what’s the dirt? You here to see the new Nomai statue?</Page>
+    </Dialogue>
+		<DialogueOptionsList>
+      <DialogueOption>
+      	<Text>New statue?</Text>
+        <DialogueTarget>Friend3</DialogueTarget>
+ 			</DialogueOption>
+			<DialogueOption>
+				<Text>Of course!</Text>
+				<DialogueTarget>Friend2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just here for the launch codes.</Text>
+				<DialogueTarget>Friend4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<SetCondition>FriendSaysHi</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Friend2</Name>
+		<Dialogue>
+			<Page>Heh, I knew you’d want to see it before you headed off! Hornfels just finished prepping it for display today. Amazing, isn’t it?</Page>
+		</Dialogue>
+    <DialogueTarget>Friend5</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Friend3</Name>
+		<Dialogue>
+			<Page>You haven’t heard? Gabbro brought it back with them from Giant’s Deep, and Hornfels just finished prepping it for display. This is it right here. Neat, huh?</Page>
+		</Dialogue>
+    <DialogueTarget>Friend5</DialogueTarget>
+  </DialogueNode>
+
+	<DialogueNode>
+		<Name>Friend4</Name>
+		<Dialogue>
+			<Page>Yeah, I get that you’re dying to head out into space, but seriously, you’ve got to see this statue before you go. It’s an amazing find!</Page>
+		</Dialogue>
+    <DialogueTarget>Friend5</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+  	<Name>Friend5</Name>
+  	<Dialogue>
+      <Page>Makes me wish we could see what a real live Nomai looks like, but I guess this is as close as we’ll ever get. Check it out - looks like they had fur! Fur is <![CDATA[<i>]]>weird<![CDATA[</i>]]>.</Page>
+      <Page>This is the first fully intact statue ever found, you know. And for how old it is, it’s in great shape!</Page>
+      <Page>...Ah geez, I got a little carried away there. Go on, you have a ship to launch! Take care of yourself out there, you hear?</Page>
+   	</Dialogue>
+  </DialogueNode>
+
+
+  <DialogueNode>
+    <Name>StatueEyesOpen</Name>
+    <EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
+    <Dialogue>
+      <Page>Hey, I was just about to come find you! Look look look, you’ve gotta see this — the Nomai statue’s eyes are open!</Page>
+      <Page>They, uh, used to be closed. Probably should’ve started with that. And now they’ve opened!</Page>
+      <Page>We’re not sure <![CDATA[<i>]]>why<![CDATA[</i>]]> they opened, since no one actually saw it happen, but this is huge news!</Page>
+      <Page>Should someone tell Gabbro? Or maybe Riebeck? Oh, stars, this is so exciting, it’s making my stomach hurt!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+	<DialogueOption>
+        <Text>Hey, do you know where Hornfels is?</Text>
+        <DialogueTarget>RadioTowerHint</DialogueTarget>
+      </DialogueOption>
+     <DialogueOption>
+        <Text>Hal! Can you help me translate this new alien language I found?</Text>
+        <DialogueTarget>MoreTranslation</DialogueTarget>
+        <RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MoreTranslation</Name>
+    <Dialogue>
+      <Page>A new language?! YES! Absolutely! Stars above, you BET I can!</Page>
+      <Page>Just give me… let’s call it a hundred samples, some form of epigraphical codex, and six months, and I should have the vague gist of the sort of graphemes this new language is working with!</Page>
+      <Page>Gosh, I can’t wait to get started!</Page>
+    </Dialogue>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>RadioTowerHint</Name>
+    <Dialogue>
+      <Page>What? Oh, yeah! They wanted me to tell you that they're over by the <![CDATA[<color=orange>Radio Tower</color>]]>. Something about the statue opening its eyes reminding them of something? I dunno.</Page>
+      <Page>You should have seen them run out of here, though. It was <![CDATA[<i>]]>wild<![CDATA[</i>]]>. I had no idea Hornfels still had that in them.</Page>
+    </Dialogue>
+  </DialogueNode>
+ 
+	<DialogueNode>
+		<Name>FriendNot5_TO_CHANGE</Name>
+		<EntryCondition>FriendSaysHi</EntryCondition>
+		<Dialogue>
+			<Page>Hey again! What’s up?</Page>
+		</Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where on Giant’s Deep would I find Gabbro?</Text>
+        <DialogueTarget>WheresGabbro</DialogueTarget>
+        <RequiredPersistentCondition>FromGiantsDeep</RequiredPersistentCondition>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where did this statue come from?</Text>
+        <DialogueTarget>Friend7</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Why did the Nomai make this statue?</Text>
+        <DialogueTarget>Friend6</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Think I’ll discover anything cool in space?</Text>
+        <DialogueTarget>Friend8</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Sorry, nevermind.</Text>
+        <DialogueTarget>Friend9</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+	</DialogueNode>
+
+  <DialogueNode>
+    <Name>FriendMenu</Name>
+    <Dialogue>
+      <Page>Was there something else?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Where’d you say this statue came from?</Text>
+        <DialogueTarget>Friend7</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where can I find Gabbro?</Text>
+        <DialogueTarget>WheresGabbro</DialogueTarget>
+        <RequiredPersistentCondition>FromGiantsDeep</RequiredPersistentCondition>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Why did the Nomai make this statue?</Text>
+        <DialogueTarget>Friend6</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Think I’ll discover anything cool in space?</Text>
+        <DialogueTarget>Friend8</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Nope, that was it.</Text>
+        <DialogueTarget>Friend9</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Friend6</Name>
+    <Dialogue>
+      <Page>Good question! So Gabbro found this fully intact statue on Giant’s Deep, right? Well, Hornfels told me it’s made from the same type of special stone as the partial statue Chert brought back from the Hourglass Twins.</Page>
+      <Page>That’s why when Gabbro, you know, chipped the Giant’s Deep statue, that stone fragment was repurposed for your ship’s computer.</Page>
+      <Page>Maybe the statues were made for storing information?</Page>
+    </Dialogue>
+    <DialogueTarget>FriendMenu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Friend7</Name>
+    <Dialogue>
+      <Page>From Giant’s Deep! Gabbro fished it out of the oceans and brought it back here for study.</Page>
+      <Page>Hornfels doesn’t know much about it yet, just that it’s <![CDATA[<i>]]>crazy<![CDATA[</i>]]> old and super tough. I wonder why the Nomai carved it?</Page>
+      <Page>Apparently, Gabbro went back to Giant’s Deep to try to learn more about the statue. Maybe they’ll find some answers there.</Page>
+    </Dialogue>
+    <RevealFacts><FactID>GD_GABBRO_ISLAND_R1</FactID></RevealFacts>
+    <SetPersistentCondition>FromGiantsDeep</SetPersistentCondition>
+    <DialogueTarget>FriendMenu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Friend8</Name>
+    <Dialogue>
+      <Page>Hey, you never know — maybe you’ll be the one to solve the mysteries of the Nomai!</Page>
+      <Page>Or maybe you’ll discover a new kind of rock or something.</Page>
+      <Page>But honestly, as long as they don’t end up naming new safety equipment after you, I’m sure you’ll have done a great job.</Page>
+    </Dialogue>
+    <DialogueTarget>FriendMenu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Friend9</Name>
+    <Dialogue>
+      <Page>No problem. Take it easy!</Page>
+    </Dialogue>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>Friend10</Name>
+    <Dialogue>
+      <Page>Alright then! Be careful out there, okay?</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WheresGabbro</Name>
+    <Dialogue>
+      <Page>Gabbro said they were going back to Giant’s Deep to wherever they found that Nomai statue. One of the islands, I think.</Page>
+      <Page>You remember Gabbro plays a flute, right? Like, all the time? I bet your signalscope could find them easily.</Page>
+      <Page>If you do see Gabbro, say hi for me!</Page>
+    </Dialogue>
+    <DialogueTarget>FriendMenu</DialogueTarget>
+  </DialogueNode>
+  
+</DialogueTree>

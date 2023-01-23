@@ -1,0 +1,37 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>TIMBER_HEARTH</ID>
+
+  <Entry>
+    <ID>TH_DEEP_SPACE</ID>
+    <Name>Deep Space Satellite</Name>
+
+
+	 <RumorFact>
+		 <ID>TH_DEEP_SPACE_HORNFELS</ID>
+		 <SourceID>TH_RADIO_TOWER</SourceID>
+		 <RumorName>Missing Explorer</RumorName>
+		 <Text>Hornfels told me about a Hearthian explorer named Acetate that went missing during one of their expeditions. The last place anyone saw them was at the Lunar Outpost, on the Attlerock. I wonder if Esker knows anything.</Text>
+	 </RumorFact>
+
+    <RumorFact>
+      <ID>TH_DEEP_SPACE_ESKER</ID>
+      <SourceID>TH_RADIO_TOWER</SourceID>
+      <RumorName>Deep Space Satellite</RumorName>
+      <Text>Esker said that Acetate wanted to scout a good location for the Deep Space Satellite before starting their most recent expedition.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>TH_DEEP_SPACE_INFO</ID>
+      <Text>I found the Hearthian Deep Space Satellite at the edge of the solar system!</Text>
+    </ExploreFact>
+	  <ExploreFact>
+		  <ID>TH_DEEP_SPACE_GABBRO</ID>
+		  <Text>Gabbro investigated the satellite at Hornfels' request, and found no apparent issues with any of the equipment.</Text>
+	  </ExploreFact>
+	  <ExploreFact>
+		  <ID>TH_DEEP_SPACE_ACETATE</ID>
+		  <Text>According to Esker, the missing Hearthian explorer Acetate went to find an ideal orbital path for the satellite before they disappeared.</Text>
+	  </ExploreFact>
+  </Entry>
+
+</AstroObjectEntry>

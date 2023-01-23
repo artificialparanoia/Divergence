@@ -1,0 +1,383 @@
+<DialogueTree>
+	<NameField>Mainframe</NameField>
+
+	<DialogueNode>
+		<Name>Mainframe_Intro</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<SetCondition>MetMainframe</SetCondition>
+		<Dialogue>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>User input recognized. Manual activation has been registered in the Mainframe database. Last request was 5 years, 4 weeks, 6 days, and 12 hours ago.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Mainframe_Main</Name>
+		<EntryCondition>MetMainframe</EntryCondition>
+		<RevealFacts>
+			<FactID>IP_MAINFRAME_TALK</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>What would you like to do?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Verify integrity of simulation modules.</Text>
+				<DialogueTarget>VerifySim</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Verify condition of external environment.</Text>
+				<DialogueTarget>VerifyRingworld</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Activate remote signal interfaces.</Text>
+				<DialogueTarget>ActivateCodeComputers</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>CodeComputersActive</RequiredCondition>
+				<Text>Confirm validity of remote signal interfaces.</Text>
+				<DialogueTarget>CheckCodeComputers_Fail</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>End communication.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Mainframe_Main_2</Name>
+		<EntryCondition>FreqCorrect_Woodlands</EntryCondition>
+		<EntryCondition>FreqCorrect_Cove</EntryCondition>
+		<EntryCondition>FreqCorrect_Canyon</EntryCondition>
+		<Dialogue>
+			<Page>What would you like to do?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Verify integrity of simulation modules.</Text>
+				<DialogueTarget>VerifySim_Signal</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Verify condition of external environment.</Text>
+				<DialogueTarget>VerifyRingworld_Signal</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Activate remote signal interfaces.</Text>
+				<DialogueTarget>ActivateCodeComputers_Signal</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>CodeComputersActive</RequiredCondition>
+				<Text>Confirm validity of remote signal interfaces.</Text>
+				<DialogueTarget>CheckCodeComputers_Success</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>End communication.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>VerifySim</Name>
+		<Dialogue>
+			<Page>Verifying intergity of simulation modules...</Page>
+			<Page>ENDLESS CANYON: OK</Page>
+			<Page>STARLIT COVE: OK</Page>
+			<Page>SHROUDED WOODLANDS: OK</Page>
+			<Page>SUBTERRIANIAN LAKE: OK</Page>
+			<Page>Simulation integrity at 99.86%. All modules stable.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>VerifyRingworld</Name>
+		<Dialogue>
+			<Page>Verifying condition of external enviornment...</Page>
+			<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
+			<Page>LIFE SUPPORT: OK</Page>
+			<Page>ARTIFICIAL LIGHTING: OK (STAGE: DAY)</Page>
+			<Page>CLIMATE CONTROL: OK</Page>
+			<Page>SOLAR SAILS: OK</Page>
+			<Page>WARNING: Host star is reaching the end of its natural life cycle! Adjusting stationary orbit...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ActivateCodeComputers</Name>
+		<SetCondition>CodeComputersActive</SetCondition>
+		<RevealFacts>
+			<FactID>IP_MAINFRAME_CODECOMPUTERS</FactID>
+			<FactID>IP_CODECOMPUTER_WOODLANDS_RUMOR_1</FactID>
+			<FactID>IP_CODECOMPUTER_COVE_RUMOR_1</FactID>
+			<FactID>IP_CODECOMPUTER_CANYON_RUMOR_1</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Activating remote signal interface for Endless Canyon...</Page>
+			<Page>Activating remote signal interface for Starlit Cove...</Page>
+			<Page>Activating remote signal interface for Shrouded Woodlands...</Page>
+			<Page>Remote signal interfaces activated. Awaiting calibration.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CheckCodeComputers_Fail</Name>
+		<Dialogue>
+			<Page>Confirming validity of remote signal interface for Endless Canyon...</Page>
+			<Page>Confirming validity of remote signal interface for Starlit Cove...</Page>
+			<Page>Confirming validity of remote signal interface for Shrouded Woodlands...</Page>
+		</Dialogue>
+		<DialogueTarget>CodeComputers_Failed</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CodeComputers_Failed</Name>
+		<Dialogue>
+			<Page>ERROR: Cannot confirm validity of remote signal interfaces. REASON: One or more interfaces are not configured or are invalid!</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>VerifySim_Signal</Name>
+		<Dialogue>
+			<Page>Verifying intergity of simulation modules...</Page>
+			<Page>ENDLESS CANYON: OK</Page>
+			<Page>STARLIT COVE: OK</Page>
+			<Page>SHROUDED WOODLANDS: OK</Page>
+			<Page>SUBTERRIANIAN LAKE: OK</Page>
+			<Page>Simulation integrity at 99.86%. All modules stable.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>VerifyRingworld_Signal</Name>
+		<Dialogue>
+			<Page>Verifying condition of external enviornment...</Page>
+			<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
+			<Page>LIFE SUPPORT: OK</Page>
+			<Page>ARTIFICIAL LIGHTING: OK (STAGE: DAY)</Page>
+			<Page>CLIMATE CONTROL: OK</Page>
+			<Page>SOLAR SAILS: OK</Page>
+			<Page>WARNING: Host star is reaching the end of its natural life cycle! Adjusting stationary orbit...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ActivateCodeComputers_Signal</Name>
+		<SetCondition>CodeComputersActive</SetCondition>
+		<Dialogue>
+			<Page>All remote interfaces active and callibrated. Awaiting input...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CheckCodeComputers_Success</Name>
+		<Dialogue>
+			<Page>Confirming validity of remote signal interface for Endless Canyon...</Page>
+			<Page>Confirming validity of remote signal interface for Starlit Cove...</Page>
+			<Page>Confirming validity of remote signal interface for Shrouded Woodlands...</Page>
+		</Dialogue>
+		<DialogueTarget>SignalBlocker_Start</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalBlocker_Start</Name>
+		<Dialogue>
+			<Page>All interfaces valid. Signal transmission capability is online and ready. Begin transmission?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yes.</Text>
+				<DialogueTarget>SignalBlocker_Connect</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No.</Text>
+				<DialogueTarget>SignalBlocker_Disconnect</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalBlocker_Connect</Name>
+		<RevealFacts>
+			<FactID>IP_MAINFRAME_SIGNALBLOCKER</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Establishing connection to intermediary relay satellite...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>Connection established.</Page>
+			<Page>Beginning transmission... </Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>Transmission received. Transmission target identified as <![CDATA[<color=orange>Signal Capture Satelite</color>]]>. All systems operational. Currently in orbit around <![CDATA[<color=orange>Universal Center</color>]]>.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalBlocker_Disconnect</Name>
+		<Dialogue>
+			<Page>Canceling outbound transmission...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Mainframe_SignalBlocker</Name>
+		<Dialogue>
+			<Page>What would you like to do?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Verify status of satellite operation.</Text>
+				<DialogueTarget>SatInfo</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Broadcast location of Signal Capture Satellite. </Text>
+				<DialogueTarget>FindLocation</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Disable signal capture net.</Text>
+				<DialogueTarget>DisableBlocker</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>End transmission.</Text>
+				<DialogueTarget>SignalBlocker_Exit</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SatInfo</Name>
+		<Dialogue>
+			<Page>Verifying status of satellite operation...</Page>
+			<Page>OPERATIONAL STATUS: OK</Page>
+			<Page>POWER: OK</Page>
+			<Page>SIGNAL CAPTURE NET: OK</Page>
+			<Page>WARNING: Direct connection unavailable! Transmission is currently in receive-only mode!</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FindLocation</Name>
+		<Dialogue>
+			<Page>Identifying approximate location of Signal Capture Satellite...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>Location identified. Current estimated travel time with transport pilgrim is 43 minutes, 25 seconds. Proceed? </Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yes.</Text>
+				<DialogueTarget>FindTransport</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No.</Text>
+				<DialogueTarget>CancelFindLocation</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FindTransport</Name>
+		<RevealFacts>
+			<FactID>IP_MAINFRAME_TRANSPORTS</FactID>
+			<FactID>QM_TRANSPORT_RUMOR_1</FactID>
+			<FactID>QM_TRANSPORT_RUMOR_2</FactID>
+			<FactID>QM_TRANSPORT_MISSING</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Broadcasting location of Signal Capture Satellite...</Page>
+			<Page>Broadcasting location of Signal Capture Satellite to...</Page>
+			<Page>Transport Pilgrim #1: DOCKED<![CDATA[\\n]]>Transport Pilgrim #2: ACTIVE (IN TRANSIT)<![CDATA[\\n]]>Transport Pilgrim #3: DOCKED<![CDATA[\\n]]>Transport Pilgrim #4: DOCKED</Page>
+			<Page>Transport Pilgrim #5: DOCKED <![CDATA[\\n]]>Transport Pilgrim #6: DOCKED<![CDATA[\\n]]>Transport Pilgrim #7: DOCKED<![CDATA[\\n]]>Transport Pilgrim #8: DOCKED</Page>
+			<Page>WARNING: <![CDATA[<color=orange>Transport Pilgrim #2</color>]]> is currently in emergency mode! Distress signal is active but is currently out of range.</Page>
+		</Dialogue>
+		<DialogueTarget>TransportFound</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>TransportFound</Name>
+		<Dialogue>
+			<Page>What would you like to do?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Diagnose condition of Transport Pilgrim #2.</Text>
+				<DialogueTarget>TransportStatus</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Auto-recall Transport Pilgrim #2.</Text>
+				<DialogueTarget>RecallTransport</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Proceed.</Text>
+				<DialogueTarget>FinishedTransport</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>TransportStatus</Name>
+		<RevealFacts>
+			<FactID>QM_TRANSPORT_INFO</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page><![CDATA[<color=orange>Transport Pilgrim #2</color>]]> is currently in emergency mode and is broadcasting an active distress signal. Last contact was 5 years, 4 weeks, 3 days, and 6 hours ago. Unknown position relative to <![CDATA[<color=orange>Universal Center</color>]]>. Last known celestial body for emergency landing was <![CDATA[<color=orange>Wandering Moon</color>]]>.</Page>
+		</Dialogue>
+		<DialogueTarget>TransportFound</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RecallTransport</Name>
+		<Dialogue>
+			<Page>ERROR: Cannot auto-recall Transport Pilgrim #2. Reason: Out of range. </Page>
+		</Dialogue>
+		<DialogueTarget>TransportFound</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FinishedTransport</Name>
+		<Dialogue>
+			<Page>Broadcasted location of Signal Capture Satellite.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CancelFindLocation</Name>
+		<Dialogue>
+			<Page>Canceling broadcast of Signal Capture Satellite location...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>DisableBlocker</Name>
+		<Dialogue>
+			<Page>ERROR: Operation not permitted. Reason: Permission denied.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalBlocker_Exit</Name>
+		<Dialogue>
+			<Page>Ending transmission with Signal Capture Satellite...</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+
+</DialogueTree>

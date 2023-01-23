@@ -1,0 +1,230 @@
+<DialogueTree>
+	<NameField>Slate</NameField>
+
+	<DialogueNode>
+		<Name>ScientistAcetate</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<SetPersistentCondition>HORNFELS_CLUE</SetPersistentCondition>
+		<Dialogue>
+			<Page>
+				Oh yeah, by the way, Hornfels wanted to talk to you. Said they wanted to mention something real quick while you're up there for the launch codes. No idea what it was about.
+			</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Since when does Hornfels want to talk to <![CDATA[<i>]]>me<![CDATA[</i>]]>?</Text>
+				<DialogueTarget>Slate_Acetate_1a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You're really starting to get on my nerves.</Text>
+				<DialogueTarget>Slate_Acetate_1b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Sure thing.</Text>
+				<DialogueTarget>Slate_Acetate_1c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_Acetate_1a</Name>
+		<Dialogue>
+			<Page>Since you became an astronaut, idiot! Don't forget that you're a bona fide member of Outer Wilds Ventures, now! Hard to beleive, I know, but it's true.</Page>
+			<Page>Plus you gotta get the launch codes anyway. Unless you already have them, in which case go do whatever space things you want to do first. Just... try not to crash into the <![CDATA[<color=orange>Observatory</color>]]> on the way back, alright? Last time that happened the whole thing almost caught on fire.</Page>
+		</Dialogue>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_Acetate_1b</Name>
+		<Dialogue>
+			<Page><![CDATA[<i>]]>Hey!<![CDATA[</i>]]> I'm not the one in the wrong here! I'm just the messenger! It just so happens that I'm the messenger for a lot of different things, because no one else can be bothered to actually tell anyone anything.</Page>
+			<Page>They should still be up at the <![CDATA[<color=orange>Observatory</color>]]>, if I'm not mistaken. You'll have to go there and talk to Hornfels to pick up the launch codes anyway, so you might as well humor them with whatever they're going on about.</Page>
+			<Page>Shouldn't take too long, in any case. Unless you're one of those Hearthians who considers "being launched from a geyser pool up to the launch platform" as "saving on flight preparation time", in which case there's no hope for you. </Page>
+		</Dialogue>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_Acetate_1c</Name>
+		<Dialogue>
+			<Page>I think that's the most agreeable to anything that you've ever been. Should I be worried? Becoming a pilot really does change a Hearthian, huh.</Page>
+			<Page>Anyway, just head on up to the <![CDATA[<color=orange>Observatory</color>]]> when you get the chance. Sometimes it feels like they're incapable of leaving.</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	
+	<DialogueNode>
+		<Name>Scientist3</Name>
+		<EntryCondition>LOOP_COUNT_EQ_2</EntryCondition>
+		<EntryCondition>SECONDLOOP_LIFT_TRIGGER</EntryCondition>
+		<Dialogue>
+			<Page>Oh, hold up, you’re going to want to get the launch codes from the observatory first.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I already got them from the observatory, remember?</Text>
+				<DialogueTarget>ScientistAnswer31</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How did I get back here? Didn’t I already lift off?</Text>
+				<DialogueTarget>ScientistAnswer32</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Wait, did I just <![CDATA[<i>]]>die<![CDATA[</i>]]>, or...?</Text>
+				<DialogueTarget>ScientistAnswer33</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ScientistAnswer31</Name>
+		<Dialogue>
+			<Page>Huh. Must be inhaling more fumes than I realized. That stuff is <![CDATA[<i>]]>potent<![CDATA[</i>]]>.</Page>
+			<Page>Well, if you’ve got the codes, I’m not gonna stop you. Good luck, and take care of that ship!</Page>
+		</Dialogue>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>ScientistAnswer32</Name>
+		<Dialogue>
+			<Page>Trust me -- with the modifications I’ve made to those rockets? There’s no way I would have missed that.</Page>
+			<Page>I won’t ask how you got the launch codes, but since you have ’em, get a move on! I want to see whether the new cockpit stays attached during liftoff.</Page>
+		</Dialogue>
+	</DialogueNode>
+	<DialogueNode>	
+		<Name>ScientistAnswer33</Name>
+		<Dialogue>
+			<Page>Uh, <![CDATA[<i>]]>no<![CDATA[</i>]]>...? You have a bad dream or something?</Page>
+			<Page>I won’t ask how you got the codes, so hurry up and launch before Hornfels decides to ground you for medical reasons.  I want to see whether the new cockpit stays attached during liftoff.</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Scientist4</Name>
+		<EntryCondition>SCIENTIST_3</EntryCondition>
+		<Dialogue>
+			<Page>
+				Looks like you’re ready for takeoff! The excitement of a launch is fun and all, but I can’t wait to get back to working on the new ship.<![CDATA[\\n]]>We’re working on fixing the autopilot’s avoidance system for this one!
+			</Page>
+			<Page>...Uh, sorry.</Page>
+		</Dialogue>	
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_Intro</Name>
+		<EntryCondition>SLATE_SHIPLOG_TUTORIAL</EntryCondition>
+		<SetPersistentCondition>COMPLETED_SHIPLOG_TUTORIAL</SetPersistentCondition>
+		<Dialogue>
+			<Page>Hey, hold up a sec!</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yeah yeah yeah, I already know about the launch codes.</Text>
+				<DialogueTarget>Slate_ShipLog_1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_1</Name>
+		<Dialogue>
+			<Page>What? No, I was going to tell you about using the ship log to set destination markers for locations you’ve visited before.</Page>
+			<Page>It’s a brilliant feature, if I say so myself. Dead useful. And the risk it poses of shorting out the fuel regulator and causing the ship to explode is so minimal that only Gossan would worry about it.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Wait, so how do I use it?</Text>
+				<DialogueTarget>Slate_ShipLog_1a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Use the ship log to mark a location I want to revisit. Got it.</Text>
+				<DialogueTarget>Slate_ShipLog_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How minimal are we talking?</Text>
+				<DialogueTarget>Slate_ShipLog_1b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What about locations I haven’t visited before?</Text>
+				<DialogueTarget>Slate_ShipLog_1c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_1a</Name>
+		<Dialogue>
+			<Page>When you’re on your ship, open up its log to the location you want to mark. Anywhere’s fine, as long as you’ve been there at least once.</Page>
+			<Page>Hop in the pilot seat, and the ship will throw up a destination marker on your display. It’s that easy.</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_2</DialogueTarget>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_ShipLog_1b</Name>
+		<Dialogue>
+			<Page>Minimal! Stars above, you worry too much. If anything’s going to kill you, it’s the autopilot.</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_2</DialogueTarget>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_ShipLog_1c</Name>
+		<Dialogue>
+			<Page>Oh, sure, I’ll just magically have the system know all the possible locations you plan to discover throughout the entire solar system, shall I?</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_2</Name>
+		<Dialogue>
+			<Page>“Wow, Slate! How do you come up with these incredible ideas?” Oh, I do the best I can with what I’ve got. Really, you’re too kind.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Slate, you are a technological marvel.</Text>
+				<DialogueTarget>Slate_ShipLog_2a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>This was extraordinarily convenient timing. Thanks!</Text>
+				<DialogueTarget>Slate_ShipLog_2b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>That’s not what my voice sounds like.</Text>
+				<DialogueTarget>Slate_ShipLog_2c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_2a</Name>
+		<Dialogue>
+			<Page>...Whoa, say that again! Please? That sounds so good when it’s not sarcastic.</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_3</DialogueTarget>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_ShipLog_2b</Name>
+		<Dialogue>
+			<Page>Sure thing, hatchling!</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_3</DialogueTarget>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>Slate_ShipLog_2c</Name>
+		<Dialogue>
+			<Page>Everyone’s a critic.</Page>
+		</Dialogue>
+		<DialogueTarget>Slate_ShipLog_3</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Slate_ShipLog_3</Name>
+		<Dialogue>
+			<Page>Anyway, I’ve got a fire to enjoy, and you’ve got launch codes to grab. Go wild with the marking feature while you're out there. Just, uh, try not to follow it so directly you fly into the sun, okay?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

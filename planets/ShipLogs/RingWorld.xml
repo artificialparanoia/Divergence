@@ -1,0 +1,199 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>INVISIBLE_PLANET</ID>
+
+  <!-- !!! MAINFRAME !!! -->
+  
+  <Entry>
+    <ID>IP_DREAMWORLD_MAINFRAME</ID>
+    <Name>The Mainframe</Name>
+
+    <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+	<IsCuriosity/>
+
+    <ExploreFact>
+      <ID>IP_MAINFRAME_INFO</ID>
+      <Text>I teleported into a hidden, secret location that appears to be some sort of central control room.</Text>
+    </ExploreFact>
+	  <ExploreFact>
+		  <ID>IP_MAINFRAME_TALK</ID>
+		  <Text>I "spoke" to the column of light in the center of the room, which was last accessed reletively recently by an unspecified user. It seems to be capable of performing very limited operations, as well as providing various bits of information about the Stranger.</Text>
+	  </ExploreFact>
+	<ExploreFact>
+      <ID>IP_MAINFRAME_WARPGATES</ID>
+      <Text>There are three walls which have sigils that are identical to the ones sealing the vault.</Text>
+    </ExploreFact>
+	  <ExploreFact>
+		  <ID>IP_MAINFRAME_CODECOMPUTERS</ID>
+		  <Text>I activated three "interfaces" which are apparently located in three different locations throughout the world. I'll have to calibrate all three of them correctly in order to gain any more information from the Mainframe.</Text>
+	  </ExploreFact>
+	<ExploreFact>
+      <ID>IP_MAINFRAME_SIGNALBLOCKER</ID>
+      <Text>After calibrating the interfaces, I was able to remotely connect to something called the Signal Capture Satellite, which is orbiting around the Stranger's term for the Eye of the Universe.</Text>
+    </ExploreFact>
+	  <ExploreFact>
+		  <ID>IP_MAINFRAME_TRANSPORTS</ID>
+		  <Text>While it can not be turned off, the approximate location of the Signal Capture Satellite can be broadcasted to the Stranger's light spacecraft. One of the spacecraft is apparently currently in transit, but is too far away from the Stranger for its distress signal to be heard.</Text>
+	  </ExploreFact>
+   
+		<!-- Woodlands -->
+		<Entry> 
+            <ID>IP_CODECOMPUTER_WOODLANDS</ID>
+            <Name>Remote Signal Interface 1</Name>
+            <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+            <RumorFact>
+                <ID>IP_CODECOMPUTER_WOODLANDS_RUMOR_1</ID>
+                <RumorName>Remote Signal Interface 1</RumorName>
+                <Text>I activated an interface using the mainframe which is somewhere in the Shrouded Woodlands.</Text>
+            </RumorFact>
+			<RumorFact>
+				<ID>IP_CODECOMPUTER_WOODLANDS_RUMOR_2</ID>
+				<RumorName>Hidden Code Interface</RumorName>
+				<Text>Acetate's log mentions that the codes found in the Cinder Isles are actually "interfaces", and that each interface corresponds to a major part of the Stranger's simulated reality.</Text>
+			</RumorFact>
+
+            <ExploreFact>
+                <ID>IP_CODECOMPUTER_WOODLANDS_FACT</ID>
+                <Text>I inputted a keyword into the remote interface for the Shrouded Woodlands, hidden in the Forbidden Archive.</Text>
+            </ExploreFact>
+        </Entry>
+		
+		<!-- Cove -->
+		<Entry> 
+            <ID>IP_CODECOMPUTER_COVE</ID>
+            <Name>Remote Signal Interface 2</Name>
+            <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+            <RumorFact>
+                <ID>IP_CODECOMPUTER_COVE_RUMOR_1</ID>
+                <RumorName>Remote Signal Interface 2</RumorName>
+                <Text>I activated an interface using the mainframe which is somewhere in the Starlit Cove.</Text>
+            </RumorFact>
+			<RumorFact>
+				<ID>IP_CODECOMPUTER_COVE_RUMOR_2</ID>
+				<RumorName>Hidden Code Interface</RumorName>
+				<Text>Acetate's log mentions that the codes found in the Cinder Isles are actually "interfaces", and that each interface corresponds to a major part of the Stranger's simulated reality.</Text>
+			</RumorFact>
+
+            <ExploreFact>
+                <ID>IP_CODECOMPUTER_COVE_FACT</ID>
+                <Text>I inputted a keyword into the remote interface for the Starlit Cove, hidden in the Forbidden Archive.</Text>
+            </ExploreFact>
+        </Entry>
+		
+	 <!-- Canyon -->
+		<Entry> 
+            <ID>IP_CODECOMPUTER_CANYON</ID>
+            <Name>Remote Signal Interface 3</Name>
+            <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+           <RumorFact>
+                <ID>IP_CODECOMPUTER_CANYON_RUMOR_1</ID>
+                <RumorName>Remote Signal Interface 3</RumorName>
+                <Text>I activated an interface using the mainframe which is somewhere in the Endless Canyon.</Text>
+            </RumorFact>
+			<RumorFact>
+				<ID>IP_CODECOMPUTER_CANYON_RUMOR_2</ID>
+				<RumorName>Hidden Code Interface</RumorName>
+				<Text>Acetate's log mentions that the codes found in the Cinder Isles are actually "interfaces", and that each interface corresponds to a major part of the Stranger's simulated reality.</Text>
+			</RumorFact>
+
+            <ExploreFact>
+                <ID>IP_CODECOMPUTER_CANYON_FACT</ID>
+                <Text>I inputted a keyword into the remote interface for the Endless Canyon, hidden in the Forbidden Archive.</Text>
+            </ExploreFact>
+        </Entry>
+  </Entry>
+
+	<Entry>
+		<ID>IP_ACETATE_VISION_TORCHES</ID>
+		<Name>Strange Visions</Name>
+
+		<Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+		<IgnoreMoreToExplore/>
+
+		<RumorFact>
+			<ID>IP_VISION_TORCHES_RUMOR_1</ID>
+			<SourceID>IP_ACETATE_LOGS</SourceID>
+			<RumorName>Acetate's Investigation</RumorName>
+			<Text>Acetate discovered something aboard the Stranger that its inhabitants wanted to keep hidden.</Text>
+		</RumorFact>
+		<RumorFact>
+			<ID>IP_VISION_TORCHES_RUMOR_2</ID>
+			<SourceID>IP_ACETATE_LOGS</SourceID>
+			<RumorName>Acetate's Investigation</RumorName>
+			<Text>Acetate was determined to find a way to open the sealed vault held in the Submerged Structure.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>IP_ENTRANCE_CELLAR</ID>
+			<Text>I saw a vision of someone opening a secret passage in a cellar, and watched them walk down to the very end of a dark hallway filled with murals. </Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>IP_ENTRANCE_LAKE</ID>
+			<Text>I saw a vision of someone walking into the water after leaving their artifact on the shoreline near the sealed vault.</Text>
+		</ExploreFact>
+	</Entry>
+  
+  <Entry>
+    <ID>IP_ACETATE_LOGS</ID>
+    <Name>Acetate's Logs</Name>
+
+    <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+
+	<ExploreFact>
+	   <ID>IP_ACETATE_LOG_ENTRANCE</ID>
+	   <Text>The missing Hearthian explorer, Acetate, stumbled upon the Stranger while scouting a location for the Deep Space Satellite. They managed to get inside, but destroyed their ship in the process, and as such decided to go further downstream in the hopes of accessing one of the Stranger's spacecraft.</Text>
+	</ExploreFact>
+	<ExploreFact>
+	   <ID>IP_ACETATE_LOG_SECRETLAB</ID>
+	   <Text>Acetate discovered something aboard the Stranger relating to a satellite, and implied that the Stranger's inhabitants wanted to keep it hidden. </Text>
+	 </ExploreFact>
+	 <ExploreFact>
+	   <ID>IP_ACETATE_LOG_SIGNALBLOCKER</ID>
+	   <Text>Acetate thought that the secret to reestablishing a connection to the Stranger's satellite lies inside of the sealed vault, but they were dismayed at the fact that there was seemingly no way to unlock it.</Text>
+	 </ExploreFact>
+	 <ExploreFact>
+       <ID>IP_ACETATE_LOG_EYESHRINE</ID>
+	   <Text>Acetate seemed to suggest that they were close to figuring out a secret about the tower in the Cinder Isles, but that they were also missing too much information to be fully confident in their discovery.</Text>
+	 </ExploreFact>
+     <ExploreFact>
+       <ID>IP_ACETATE_LOG_CODEROOM</ID>
+       <Text>Acetate discovered a secret relating to the codes used to unlock the vault, and that they're tied to three frequencies emitted from the tower in the Cinder Isles.</Text>
+     </ExploreFact>
+	  
+   </Entry>
+   
+    <Entry>
+    <ID>IP_TOWER_SIGNALS</ID>
+    <Name>Tower Signals</Name>
+
+    <Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+    <RumorFact>
+      <ID>IP_TOWER_SIGNALS_RUMOR_1</ID>
+      <SourceID>IP_ACETATE_LOGS</SourceID>
+      <RumorName>Island Tower Secret</RumorName>
+      <Text>According to Acetate's log, the tower in the Cinder Isles hides a secret about the true nature of the Stranger.</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>IP_TOWER_SIGNAL_HIGH</ID>
+      <Text>The tower in the Cinder Isles emits a strange, ethereal signal referred to as "Enlightment".</Text>
+    </ExploreFact>
+	<ExploreFact>
+      <ID>IP_TOWER_SIGNAL_MEDIUM</ID>
+      <Text>The tower in the Cinder Isles emits a technical-sounding signal referred to as "Foresight".</Text>
+    </ExploreFact>
+	<ExploreFact>
+      <ID>IP_TOWER_SIGNAL_LOW</ID>
+      <Text>The tower in the Cinder Isles emits a low, almost calming signal referred to as "Eternity".</Text>
+    </ExploreFact>
+	<ExploreFact>
+	  <ID>IP_TOWER_SIGNAL_HINT</ID>
+	  <Text>The signal which leads to the Submerged Structure is actually the signal for the tower itself, while the others correspond to their respective locations.</Text>
+	</ExploreFact>
+   </Entry>
+  
+</AstroObjectEntry>

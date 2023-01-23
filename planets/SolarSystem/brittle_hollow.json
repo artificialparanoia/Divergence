@@ -1,0 +1,24 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "BrittleHollow",
+    "removeChildren": [
+        "Sector_BH/Sector_Crossroads/Characters_Crossroads/Traveller_HEA_Riebeck/ConversationZone_Riebeck"
+    ],
+    "Props": {
+        "dialogue": [
+            {
+                "range": 2,
+                "pathToAnimController": "Sector_BH/Sector_Crossroads/Characters_Crossroads/Traveller_HEA_Riebeck",
+                "isRelativeToParent": true,
+                "xmlFile": "planets/Dialogue/Riebeck.xml",
+                "radius": 2,
+                "lookAtRadius": 2,
+                "position": {
+                    "x": -0.134,
+                    "y": 1.7637,
+                    "z": 0.279
+                }
+            }
+        ]
+    }
+}

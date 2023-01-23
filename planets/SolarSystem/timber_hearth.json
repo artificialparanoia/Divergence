@@ -1,0 +1,137 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Timber Hearth",
+    "removeChildren": [
+        "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
+        "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
+        "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)"
+    ],
+    "Props": {
+        "dialogue": [
+            {
+                "range": 2,
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+                "lookAtRadius": 0,
+                "position": {
+                    "x": 17.21925,
+                    "y": -40.32771,
+                    "z": 186.2621
+                },
+                "radius": 0,
+                "xmlFile": "planets/Dialogue/Slate_Remote.xml",
+                "remoteTriggerPosition": {
+                    "x": 7.0847,
+                    "y": -42.2857,
+                    "z": 187.84
+                },
+                "remoteTriggerRadius": 3,
+                "remoteTriggerPrereqCondition": "LOOP_COUNT_GOE_3",
+                "blockAfterPersistentCondition": "HORNFELS_CLUE"
+            },
+            {
+                "range": 2,
+                "isRelativeToParent": true,
+                "xmlFile": "planets/Dialogue/Slate.xml",
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+                "lookAtRadius": 2,
+                "radius": 2,
+                "position": {
+                    "x": -0.029,
+                    "y": 0.9186,
+                    "z": -0.322
+                }
+            },
+            {
+                "range": 2,
+                "lookAtRadius": 3,
+                "radius": 2,
+                "pathToAnimController": "Sector_TH/Villager_HEA_Hornfels_RadioTower/Villager_HEA_Hornfels_ANIM_Working",
+                "isRelativeToParent": true,
+                "xmlFile": "planets/Dialogue/Hornfels.xml",
+                "parentPath": "Sector_TH/Villager_HEA_Hornfels_RadioTower/",
+                "position": {
+                    "x": 1.0545,
+                    "y": 1.5672,
+                    "z": 0.3018
+                }
+            },
+            {
+                "range": 2,
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/Villager_HEA_Hal_ANIM_Museum",
+                "isRelativeToParent": true,
+                "xmlFile": "planets/Dialogue/Hal_Museum.xml",
+                "radius": 2,
+                "position": {
+                    "x": 0,
+                    "y": 1.5218,
+                    "z": 0.25
+                },
+                "lookAtRadius": 1
+            }
+        ],
+        "details": [
+            {
+                "scale": 1,
+                "path": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
+                "position": {
+                    "x": -172.7191,
+                    "y": 176.4263,
+                    "z": 42.2268
+                },
+                "removeComponents": false,
+                "removeChildren": [
+                    "ConversationZone_Hornfels"
+                ],
+                "rotation": {
+                    "x": 314.2448,
+                    "y": 97.3685,
+                    "z": 5.5807
+                },
+                "rename": "Villager_HEA_Hornfels_RadioTower"
+            }
+        ]
+    },
+    "Volumes": {
+        "audioVolumes": [
+            {
+                "layer": 0,
+                "priority": 2,
+                "clipSelection": "random",
+                "track": "environment",
+                "loop": true,
+                "audio": "TH_MuseumAmbience_LP",
+                "position": {
+                    "x": -175.4622,
+                    "y": 174.7154,
+                    "z": 44.20074
+                },
+                "volume": 0.25,
+                "radius": 10,
+                "fadeSeconds": 0.5,
+                "randomizePlayhead": true
+            },
+            {
+                "priority": 1,
+                "clipSelection": "manual",
+                "track": "music",
+                "loop": false,
+                "pauseOnFadeOut": true,
+                "audio": "audio/radiotower_amb_hack.wav",
+                "radius": 20,
+                "position": {
+                    "x": -163.1743,
+                    "y": 164.5948,
+                    "z": 93.88664
+                },
+                "volume": 0.24,
+                "noFadeFromBeginning": true,
+                "fadeSeconds": 5,
+                "layer": 5
+            }
+        ]
+    },
+	"ShipLog": {
+    "xmlFile": "planets/ShipLogs/TimberHearth.xml",
+    "spriteFolder": "planets/ShipLogs/sprites"
+  }
+}

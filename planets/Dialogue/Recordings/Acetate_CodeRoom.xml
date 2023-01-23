@@ -1,0 +1,23 @@
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>AcetateCodes</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<RevealFacts>
+			<FactID>IP_ACETATE_LOG_CODEROOM</FactID>
+			<FactID>IP_TOWER_SIGNALS_RUMOR_1</FactID>
+			<FactID>IP_CODECOMPUTER_COVE_RUMOR_2</FactID>
+			<FactID>IP_CODECOMPUTER_CANYON_RUMOR_2</FactID>
+			<FactID>IP_CODECOMPUTER_WOODLANDS_RUMOR_2</FactID>
+			<FactID>IP_TOWER_SIGNAL_HINT</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>I knew it. I had a hunch that there was more to it before, but now this confirms it. This really is big.</Page>
+			<Page>For anyone who comes after me, and who is following the same path: They're not just codes. They're <![CDATA[<i>]]>interfaces<![CDATA[</i>]]>. By the stars, why didn't I think of it sooner?</Page>
+			<Page>There are three signals coming from the top of tower which correspond to each one of the "dreams".  You can't hear them unless you use your signalscope, but the key is that each of them is equivalent to an individual seal, as you can see here. </Page>
+			<Page>Originally I thought that the codes were completely useless, but now I know better. They're <![CDATA[<i>]]>meant<![CDATA[</i>]]> to look that way, even though they're secretly the solution to all of this. It's practically genius when you think about it. Everyone is so fixated on the vault that they don't even think to consider that there's more to it than that. </Page>
+			<Page>Something to keep in mind: The signal leading to the Diving Bell is actually the master signal for this tower, rather than the other way around. That bit confused me. Other than that, the rest is pretty straight forward.</Page>
+			<Page>Also, I'd imagine that if you've gotten this far, and haven't heard a word from me, I didn't make it back home. Guess it is what it is, being a traveler and all. You take risks, and make peace with the consequences.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

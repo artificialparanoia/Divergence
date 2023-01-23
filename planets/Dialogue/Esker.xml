@@ -1,0 +1,201 @@
+<DialogueTree>
+	<NameField>Esker</NameField>
+	
+	<DialogueNode>
+		<Name>Esker1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Oh, hey, it’s you!</Page>
+			<Page>Ground control didn’t tell me you were launching. Long time no see!</Page>
+			<Page>Actually. I guess it’s been a long time since I’ve seen anyone.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>TM_ESKER_X1</FactID></RevealFacts>
+		<SetCondition>EskerSaysHi</SetCondition>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Don’t the other travelers come by?</Text>
+				<DialogueTarget>OtherTravelers</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Was that you whistling?</Text>
+				<DialogueTarget>Music</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Seems lonely up here.</Text>
+				<DialogueTarget>Lonely</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What is this place?</Text>
+				<DialogueTarget>Place</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TH_DEEP_SPACE_HORNFELS</RequiredLogCondition>
+				<Text>Do you know anything about Acetate?</Text>
+				<DialogueTarget>Acetate_Start</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>SayHiToEsker</RequiredPersistentCondition>
+				<Text>Marl says hi.</Text>
+				<DialogueTarget>Marl</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Talk to you later.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Esker2</Name>
+		<Dialogue>
+			<Page>Don’t go! Uh, I mean, anything else you wanted to ask?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Don’t the other travelers come by?</Text>
+				<DialogueTarget>OtherTravelers</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Seems lonely up here.</Text>
+				<DialogueTarget>Lonely</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Was that you whistling?</Text>
+				<DialogueTarget>Music</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What is this place?</Text>
+				<DialogueTarget>Place</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TH_DEEP_SPACE_HORNFELS</RequiredLogCondition>
+				<Text>Do you know anything about Acetate?</Text>
+				<DialogueTarget>Acetate_Start</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>SayHiToEsker</RequiredPersistentCondition>
+				<Text>Marl says hi.</Text>
+				<DialogueTarget>Marl</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Talk to you later.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>OtherTravelers</Name>
+		<Dialogue>
+			<Page>The Lunar Outpost saw more traffic back when our ships were less sophisticated and needed more frequent repairs. Nowadays, it’s mostly used to keep a set of eyes on things.</Page>
+			<Page>Sometimes Chert comes by to say hi, but Gabbro is Gabbro, and you know how Riebeck feels about “unnecessary spaceflight.”</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Lonely</Name>
+		<Dialogue>
+			<Page>A little. I’m in touch with ground control – Hornfels and Gossan, mostly – and they radio up to chat now and then.</Page>
+			<Page>And when ground control forgets I’m up here <![CDATA[<size=20>]]>and they usually do<![CDATA[</size>]]>, I launch my Little Scout at the village.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>They forget about you?</Text>
+				<DialogueTarget>Forget</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You <![CDATA[<i>]]>spy<![CDATA[</i>]]> on us?</Text>
+				<DialogueTarget>Spy</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Forget</Name>
+		<Dialogue>
+			<Page>I don’t blame them. For one, I don’t check in as often as the other travelers, since I’m always in one place.</Page>
+			<Page>And it’s not so bad up here, really. At least it’s peaceful and quiet. You don’t always get that in our solar system.</Page>
+			<Page>Let alone in our village.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Spy</Name>
+		<Dialogue>
+			<Page>What? No! It’s not spying, it’s...</Page>
+			<Page>It’s one-way communication. That none of the villagers know about. <![CDATA[<size=20>]]>Because I’ve never told them<![CDATA[</size>]]>.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Music</Name>
+		<Dialogue>
+			<Page>Probably. Or actually, definitely. The other travelers carry instruments, so they don’t bother whistling.</Page>
+			<Page>You can pick up their music with a signalscope, you know. Best spot for that is the <![CDATA[<color=orange>north pole</color>]]>. Great reception.</Page>
+     		<Page>The north pole is marked in red on your <![CDATA[<color=orange>mini map</color>]]>, but the Attlerock is a pretty small moon, really. Just go north. You can’t miss it.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>TM_NORTH_POLE_R1</FactID></RevealFacts>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Place</Name>
+		<Dialogue>
+			<Page>Ha ha, very funny. <![CDATA[<Pause/>]]>...Oh, stars above, you’re serious, aren’t you? That’s just depressing.</Page>
+			<Page><![CDATA[<color=grey>Sigh...</color>]]> <![CDATA[<Pause/>]]>Welcome to the Lunar Outpost, which apparently the space program doesn’t bother to teach anyone anymore.</Page>
+			<Page>When we first started Outer Wilds, travelers used to bring their ships here all the time for repairs. Our spacefaring technology has improved loads since then, but the older ships tended to, uh, fall apart a lot. Like, more than they do now.</Page>
+			<Page>Using the outpost cut down on the number of launches and landings taking place in the village and also the number of fires. Nowadays, though, it’s mostly just me up here raising saplings from Timber Hearth and keeping an eye on things.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Marl</Name>
+		<Dialogue>
+			<Page>Heh, Marl is probably the only one who remembers I’m up here. I should go see the big lug soon.</Page>
+			<Page>Don’t tell them about this, but sometimes I throw my Little Scout down to make sure Marl isn’t doing anything stupid. I worry that big tree in the village wouldn’t stand a chance otherwise.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Secondary</Name>
+		<EntryCondition>EskerSaysHi</EntryCondition>
+		<Dialogue>
+			<Page>Hi again. Can’t get enough of the moon? ...I’m kidding.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+	<!--DIVERGENCE-->
+	
+	<DialogueNode>
+		<Name>Acetate_Start</Name>
+		<Dialogue>
+			<Page>Acetate, huh? <![CDATA[<Pause/>]]>Now that's a name that I haven't heard in a very, <![CDATA[<i>]]>very<![CDATA[</i>]]> long time.</Page>
+			<Page>Well, as a matter of fact, Acetate was the last member of Outer Wilds Ventures to actually use this outpost. Also part of the reason that we stopped, too. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]> A real Feldspar, that one.</Page>
+			<Page><![CDATA[<i>]]>Incredibly<![CDATA[</i>]]> smart, though. A little too much, if you ask me. I suppose that's why Hornfels is still so hung up on it after all of these years. Someone like that doesn't really <![CDATA[<i>]]>go<![CDATA[</i>]]> missing.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Do you have any idea where they could have gone?</Text>
+				<DialogueTarget>AcetateSatellite</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>AcetateSatellite</Name>
+		<RevealFacts>
+			<FactID>TH_DEEP_SPACE_ACETATE</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Not really. The travelers don't really tell me those sorts of things anymore. <![CDATA[<size=20>]]>Not that they ever did.<![CDATA[</size>]]> Frankly Acetate could have ended up anywhere by now. </Page>
+			<Page>I do remember hearing though that they wanted to do something before they cut themselves lose. Something about scouting a good location for Hornfels' <![CDATA[<color=orange>Deep Space Satellite</color>]]>, I forget the details. Don't know what happened to them after that.</Page>
+			<Page>Was that helpful? Honestly you probably know more about this whole thing than I do at this point. Good luck on the search, though! Hope you find them.</Page>
+		</Dialogue>
+		<DialogueTarget>Esker2</DialogueTarget>
+	</DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,365 @@
+<DialogueTree>
+  <NameField>Hornfels</NameField>
+
+  <DialogueNode>
+    <Name>Curator1</Name>
+      <EntryCondition>DEFAULT</EntryCondition>
+      <Dialogue>
+        <Page>There you are! I just finished pre-flight observations, and local conditions are good. Time to get our newest astronaut off the ground!</Page>
+        <Page>And you’ll be our <![CDATA[<i>]]>first<![CDATA[</i>]]> astronaut ever equipped with a Nomai translator tool! I confess, I’ve been giddy all day just thinking about it.</Page>
+        <Page>We’re better equipped than ever to unravel the mysteries of the Nomai. You and Hal should be very proud of your work!</Page>
+        <Page>Tell me, what’s your plan once you’re in space?</Page>
+      </Dialogue>
+      <DialogueOptionsList>
+        <DialogueOption>
+          <Text>I’m going to learn more about the Nomai.</Text>
+          <DialogueTarget>Curator2</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I’ll meet up with the other travelers.</Text>
+          <DialogueTarget>Curator3</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I want to go somewhere no one’s gone before.</Text>
+          <DialogueTarget>Curator4</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I think I’ll start with something small.</Text>
+          <DialogueTarget>Curator5</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I don’t know.</Text>
+          <DialogueTarget>Curator6</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I’m gonna wing it!</Text>
+          <DialogueTarget>Curator7</DialogueTarget>
+        </DialogueOption>
+      </DialogueOptionsList>
+      <SetCondition>TalkedToHornfels</SetCondition>
+    </DialogueNode>
+
+   <DialogueNode>
+      <Name>Curator2</Name>
+      <Dialogue>
+        <Page>I might have guessed as much! No sense in making a translator tool if you’re not going to use it to translate anything.</Page>
+        <Page>We’ve barely scratched the surface of the Nomai writing in our solar system, so we still know very little about them. We’ve no idea if they originated here or traveled here, or why they disappeared.</Page>
+        <Page>That tool of yours should prove indispensible in solving the mystery of this ancient species!</Page>
+      </Dialogue>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+    
+    <DialogueNode>
+      <Name>Curator3</Name>
+      <Dialogue>
+        <Page>You’re going to check in with them, are you? Not a bad plan - no one knows the solar system better than our astronauts.</Page>
+        <Page>Let’s see... Chert is on the Hourglass Twins, Riebeck is on Brittle Hollow, and Gabbro is on Giant’s Deep, last I checked.</Page>
+        <Page>And... Well, there’s Feldspar, obviously, but of course we don’t know where they are, or if they’re even alive.</Page>
+        <Page>Feldspar has been lost for a very long time, I’m afraid.</Page>
+        <Page>...On a more cheerful note, you’ll find Esker stationed on the Attlerock. They’re not a traveler so much as a lunar local, but I’m sure they’d appreciate a visit nevertheless.</Page>
+      </Dialogue>
+      <RevealFacts><FactID>TM_ESKER_R1</FactID></RevealFacts>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+    
+    <DialogueNode>
+      <Name>Curator4</Name>
+      <Dialogue>
+        <Page>I like it! You’ll have plenty of options to choose from.</Page>
+        <Page>No one’s ever landed on the Interloper before, you know. Perhaps you’ll be the first?</Page>
+      <Page>I must say... Should you choose to go to Dark Bramble, be <![CDATA[<i>]]>very<![CDATA[</i>]]> careful. No one’s explored there before, either, for what you’ll find are excellent reasons.</Page>
+      </Dialogue>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator5</Name>
+      <Dialogue>
+        <Page>You’d prefer to ease into things? That’s a sensible plan! More sensible than most of our astronauts tend to be, and that’s a fact.</Page>
+        <Page>Do you think you’ll go to the Attlerock, then? Our moon would be a safe place to travel to and get your bearings in space, and I’m sure Esker would appreciate the visit.</Page>
+        <Page>Plus, we don’t know what the ancient Nomai ruins on the moon are, or why they were built. You could put your new translator tool through its paces!</Page>
+      </Dialogue>
+      <RevealFacts><FactID>TM_ESKER_R1</FactID><FactID>TM_EYE_LOCATOR_R1</FactID></RevealFacts>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator6</Name>
+      <Dialogue>
+        <Page>Haha! Overwhelmed by the options, perhaps? I don’t blame you.</Page>
+        <Page>If you need help getting started, you could go visit Esker on the moon. They’re alone on the Attlerock most of the time, so I’m sure they’d appreciate it.</Page>
+        <Page>Plus, we don’t know what the ancient Nomai ruins on the moon are, or why they were built. You could put your new translator tool through its paces!</Page>
+      </Dialogue>
+      <RevealFacts><FactID>TM_ESKER_R1</FactID><FactID>TM_EYE_LOCATOR_R1</FactID></RevealFacts>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator7</Name>
+      <Dialogue>
+        <Page>Planning to follow in the footsteps of Feldspar and the great Outer Wilds Ventures tradition, are you? I might have guessed.</Page>
+        <Page>Well, see if you can’t put that translator tool of yours to good use while you’re out there!</Page>
+      </Dialogue>
+      <DialogueTarget>Curator8</DialogueTarget>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator8</Name>
+      <Dialogue>
+        <Page>Well then, looks like all that’s left is to send you off! All in all, it’s a fine day for a launch!</Page>
+      </Dialogue>
+      <DialogueOptionsList>
+        <DialogueOption>
+          <Text>I’m ready to get off this rock!</Text>
+          <DialogueTarget>Curator9</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I’m ready to die in space.</Text>
+          <DialogueTarget>Curator10</DialogueTarget>
+        </DialogueOption>
+      </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator9</Name>
+      <Dialogue>
+        <Page>Excellent! You’ll be needing the <![CDATA[<color=orange>launch codes</color>]]>, then.</Page>
+        <Page>Here they are. Best get off the ground before Slate makes any more modifications to your ship, eh?</Page>
+        <Page>Good luck out there! Let me know if I can help you with anything.</Page>
+      </Dialogue>
+      <SetPersistentCondition>LAUNCH_CODES_GIVEN</SetPersistentCondition>
+    </DialogueNode>
+
+    <DialogueNode>
+      <Name>Curator10</Name>
+      <Dialogue>
+        <Page>I’m not one for superstition, but isn’t that kind of unlucky to say before a launch?</Page>
+        <Page>At any rate, here are the <![CDATA[<color=orange>launch codes</color>]]>. Try not to worry too much - our ships are every bit as safe as Slate could be persuaded to make them.</Page>
+        <Page>Best of luck out there! Let me know if I can help you with anything.</Page>
+      </Dialogue>
+      <SetPersistentCondition>LAUNCH_CODES_GIVEN</SetPersistentCondition>
+    </DialogueNode>
+
+      <DialogueNode>
+    <Name>Curator11</Name>
+    <EntryCondition>TalkedToHornfels</EntryCondition>
+    <Dialogue>
+      <Page>Hello again!</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Curator12</Name>
+    <EntryCondition>Space</EntryCondition>
+    <Dialogue>
+      <Page>Back so soon?</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Curator13</Name>
+	  <Dialogue>
+		  <Page>
+
+		  </Page>
+	  </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>CuratorDiscoveries</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are the other travelers?</Text>
+        <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Tell me more about Feldspar.</Text>
+        <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
+      </DialogueOption>
+	  <DialogueOption>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
+      <DialogueOption>
+        <Text>No thanks, I’m good.</Text>
+        <DialogueTarget>Curator14</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CuratorOtherTravelers</Name>
+    <Dialogue>
+      <Page>Well, let’s see... Chert is on the Hourglass Twins, Riebeck is on Brittle Hollow, and Gabbro is on Giant’s Deep.</Page>
+      <Page>And... there’s Feldspar, obviously, but of course we don’t know where they are, or if they’re even still alive.</Page>
+      <Page>Feldspar has been lost for a very long time, I’m afraid.</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CuratorMoreAboutFeldspar</Name>
+    <Dialogue>
+      <Page>Feldspar was one of the four founding members of Outer Wilds, along with our flight coach Gossan, Slate the engineer, and me.</Page>
+      <Page>As ground control and later the museum curator, I didn’t work with Feldspar as closely as Slate and Gossan did. I <![CDATA[<i>]]>can<![CDATA[</i>]]> tell you Feldspar was absolutely fearless, though. Nothing scared them.</Page>
+      <Page>Test-piloted everything Slate ever built! It’s a wonder Feldspar lived to see space, frankly, but they did. Flew all sorts of dangerous stunts and explored everything they could find.</Page>
+      <Page>And then one day, they just... didn’t come back. We don’t know what happened, or where Feldspar went, or even whether they’re still alive.</Page>
+      <Page>It’s been a long time since they left.</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CuratorEyesOpen</Name>
+    <Dialogue>
+      <Page>What? You say the statue opened its eyes and looked at you?!</Page>
+      <Page>...How wonderful for you.</Page>
+      <Page>No, truly, that’s wonderful! It really is. ...Even if I <![CDATA[<i>]]>have<![CDATA[</i>]]> been pouring over it every night for weeks. It’s stupendous you were able to get a reaction from the statue just by glancing at it a few times.</Page>
+      <Page>Ergh, sorry, that’s not a very scientific thing to say, is it? I <![CDATA[<i>]]>am<![CDATA[</i>]]> glad. I’m just also insufferably, <![CDATA[<i>]]>profoundly<![CDATA[</i>]]> jealous. You’ll have to forgive me.</Page>
+      <Page>That aside - I have research to do! I wonder why the statue opened its eyes. Surely this means they aren’t mere decorative ornaments...?</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>CuratorFeldsparFound</Name>
+    <Dialogue>
+      <Page>You found Feldspar?! And they’re in Dark Bramble?! Stars above, this is wonderful news! Thank you! Thank you for finding them!</Page>
+      <Page>That Feldspar didn’t immediately join you on your ship and return here is incredibly Feldspar of them. We were never entirely sure what Feldspar was thinking back then, either.</Page>
+      <Page>Still, we ought to fish them out of that dreadful place with all haste! I’ll radio Gossan and have them prepare a ship. It really should be Gossan who brings Feldspar home.</Page>
+      <Page>Again, thank you. You can hardly imagine how profoundly happy I am to hear they’re alive and unharmed.</Page>
+    </Dialogue>
+    <DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+		<Name>CuratorAcetateIntro</Name>
+		<Dialogue>
+			<Page>Oh... yes, that. I suppose Slate told you, then?</Page>
+			<Page>I wasn't going to mention it since this is your first expedition, but something about that statue opening its eyes convinced me otherwise.</Page>
+			<Page>A bit before your time, and before Feldspar went missing, there was another traveler. A Hatchling. Quite like you, in fact.</Page>
+			<Page>They were one of the first of the new generation of Outer Wilds Ventures that came after of the four of us -- that being me, Slate, Gossan, and of course Feldspar. They were quite taken with the name "Acetate" of all things, something that was of their own invention by the way, but I have never seen a traveller so enamored with the Hearthian spirit as they were.</Page>
+			<Page>That is, of course, until one day -- even more suddenly than Feldspar -- they went out to the edge of the solar system and just... disappeared. No one knows why. With Feldspar I expected it, as much as I hate to admit, but with Acetate... I can't even begin to imagine how that would happen.</Page>
+			<Page>Could you find out what happened to them for me? I know that it's a big ask, but if you at some point find anything that could give us - or me - some closure, I would greatly appreciate it.</Page>
+		</Dialogue>
+	  <DialogueOptionsList>
+		  <DialogueOption>
+			  <Text>Where should I start?</Text>
+			  <DialogueTarget>CuratorAcetate_Attlerock</DialogueTarget>
+		  </DialogueOption>
+	  </DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorAcetate_Attlerock</Name>
+		<RevealFacts>
+			<FactID>TH_DEEP_SPACE_HORNFELS</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>The last place that they went to before they went missing was the <![CDATA[<color=orange>Lunar Outpost</color>]]>, on the Attlerock. We don't use it much anymore, but back in the day it was vital for the exploration of our solar system.</Page>
+			<Page>I'd ask Esker if they remember anything about it, on the off chance that they do. It seems to me that there aren't really any leads as to where Acetate could have gone, unfortunately, and I don't necessarily expect for you to find anything useful on your own.</Page>
+			<Page>Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.</Page>
+			<Page>Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13</DialogueTarget>
+	</DialogueNode>
+
+  <DialogueNode>
+	<Name>CuratorDiscoveries</Name>
+	<Dialogue>
+		<Page>Did you now? Let's hear it!</Page>
+	</Dialogue>
+	<DialogueOptionsList>
+		<!--<DialogueOption>
+			<RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
+			<Text>I found an entirely new alien civilization hidden within our star system!</Text>
+			<DialogueTarget>CuratorFoundRingworld</DialogueTarget>
+		</DialogueOption>-->
+		<DialogueOption>
+			<RequiredPersistentCondition>MetFeldspar</RequiredPersistentCondition>
+			<Text>I found Feldspar!</Text>
+			<DialogueTarget>CuratorFeldsparFound</DialogueTarget>
+		</DialogueOption>
+		<DialogueOption>
+			<RequiredCondition>HornfelsStatueEyes</RequiredCondition>
+			<Text>The Nomai statue opened its eyes!</Text>
+			<DialogueTarget>CuratorEyesOpen</DialogueTarget>
+		</DialogueOption>
+		<DialogueOption>
+			<Text>Actually, nevermind.</Text>
+			<DialogueTarget>CuratorExit</DialogueTarget>
+		</DialogueOption>
+	</DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+	<Name>CuratorExit</Name>
+	<Dialogue>
+	   <Page>Ah. Well, if you do come across anything in your travels that you feel is worth mentioning, I would love to hear it.</Page>
+	</Dialogue>
+	<DialogueTarget>Curator13</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Curator14</Name>
+    <Dialogue>
+      <Page>Take care!</Page>
+    </Dialogue>
+  </DialogueNode>
+	
+  <!--Divergence-->
+
+  <DialogueNode>
+    <Name>CuratorEyesOpenLoop2</Name>
+    <EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
+	<SetCondition>TalkedToCurator</SetCondition>
+    <Dialogue>
+      <Page>Ah, hello! I was just about to radio Gossan to come and find you! Nice to see that you've already gotten on with your first expedition.</Page>
+      <Page>I'm not sure if anyone told you, but the statue opened its eyes! Imagine that! Of course, I have absolutely no idea why, but still. It's fascinating.</Page>
+    </Dialogue>
+	  <DialogueOptionsList>
+		  <DialogueOption>
+			  <Text>What are you doing here?</Text>
+			  <DialogueTarget>CuratorRadioTower</DialogueTarget>
+		  </DialogueOption>
+		  <DialogueOption>
+			  <RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
+			  <Text>Hey, I'm in a hurry. Can I ask you something?</Text>
+			  <DialogueTarget>CuratorQuick</DialogueTarget>
+		  </DialogueOption>
+	  </DialogueOptionsList>
+  </DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorQuick</Name>
+		<Dialogue>
+			<Page>Oh, yes. Certainly. What is it?</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorRadioTower</Name>
+		<Dialogue>
+			<Page>Oh, well, crunching the numbers as they say. Mainly just wanted to get a little bit of peace and quiet. I tend to come here when the Observatory gets a little too... busy, for my liking - and sometimes it's very helpful for getting a different perspective on things.</Page>
+			<Page>Frankly, all of this ruckus surrounding the statue opening its eyes has proved a little bit too much for me at the moment. And of course Hal is asking a million questions, not that I can blame them.</Page>
+			<Page>Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety. Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!</Page>
+			<Page>Anyhow, enough about that. What about you? Anything you need before continuing your maiden voyage among the stars?</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorMetAtRadioTower</Name>
+		<EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
+		<EntryCondition>TalkedToCurator</EntryCondition>
+		<Dialogue>
+			<Page>Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out another time.</Page>
+			<Page>Was there something you needed?</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13</DialogueTarget>
+	</DialogueNode>
+
+</DialogueTree>

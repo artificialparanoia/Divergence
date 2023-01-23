@@ -1,0 +1,272 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "RINGWORLD",
+  "Props": {
+    "details": [
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": 194.3735,
+          "y": -155.3829,
+          "z": 191.5018
+        },
+        "rotation": {
+          "x": 337.9953,
+          "y": 314.6848,
+          "z": 90
+        },
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
+        "alignToNormal": false,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": -241.6993,
+          "y": -66.8933,
+          "z": 150.2968
+        },
+        //Shits fucked, innit bruv?
+        //"parentPath": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2",
+        //"isRelativeToParent": false,
+        "rotation": {
+          "x": 311.3875,
+          "y": 241.9171,
+          "z": 47.1383
+        },
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": 99.0382,
+          "y": -152.4627,
+          "z": -202
+        },
+        "rotation": {
+          "x": 90,
+          "y": 332.6577,
+          "z": 0
+        },
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": 181.91,
+          "y": 150.4679,
+          "z": -148.1877
+        },
+        "rotation": {
+          "x": 282.1722,
+          "y": 30,
+          "z": 94.4533
+        },
+        "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
+        "keepLoaded": true,
+        "position": {
+          "x": 186.2138,
+          "y": 160.0338,
+          "z": -136.3331
+        },
+        "rotation": {
+          "x": -1.538961,
+          "y": 126.439,
+          "z": 180.0001
+        },
+        "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
+        "rename": "JammerNotes",
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": -4.7867,
+          "y": 1.0368,
+          "z": -1.9173
+        },
+        "rotation": {
+          "x": 354.4117,
+          "y": 194.5741,
+          "z": 43.5149
+        },
+        "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot/Interactibles_DreamFireLighthouse_Zone2/Pivot_CodeRoom",
+        "isRelativeToParent": true,
+        "removeComponents": true
+      }
+    ],
+    "signals": [
+      {
+        "identificationRadius": 30,
+        "onlyAudibleToScope": true,
+        "reveals": "IP_TOWER_SIGNAL_MEDIUM",
+        "frequency": "DreamSignal",
+        "detectionRadius": 50,
+        "insideCloak": true,
+        "position": {
+          "x": -205.7789,
+          "y": 36.6249,
+          "z": 97.35131
+        },
+        "sourceRadius": 1.75,
+        "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot",
+        "isRelativeToParent": false,
+        "audio": "audio/test_audio_medium.wav",
+        "name": "\"Foresight\""
+      },
+      {
+        "identificationRadius": 30,
+        "onlyAudibleToScope": true,
+        "reveals": "IP_TOWER_SIGNAL_HIGH",
+        "frequency": "DreamSignal",
+        "detectionRadius": 50,
+        "insideCloak": true,
+        "position": {
+          "x": -204.9549,
+          "y": 52.67038,
+          "z": 89.62376
+        },
+        "sourceRadius": 1.75,
+        "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot",
+        "isRelativeToParent": false,
+        "audio": "audio/test_audio_high.wav",
+        "name": "\"Enlightenment\""
+      },
+      {
+        "identificationRadius": 30,
+        "onlyAudibleToScope": true,
+        "reveals": "IP_TOWER_SIGNAL_LOW",
+        "frequency": "DreamSignal",
+        "detectionRadius": 50,
+        "insideCloak": true,
+        "position": {
+          "x": -213.0489,
+          "y": 46.77947,
+          "z": 75.29535
+        },
+        "sourceRadius": 1.75,
+        "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot",
+        "isRelativeToParent": false,
+        "audio": "audio/test_audio_low.wav",
+        "name": "\"Eternity\""
+      },
+      {
+        "identificationRadius": 1,
+        "onlyAudibleToScope": true,
+        "reveals": "",
+        "frequency": "DreamSignal",
+        "insideCloak": true,
+        "name": "Canyon Signal",
+        "sourceRadius": 1.75,
+        "detectionRadius": 1,
+        "audio": "audio/test_audio_low.wav",
+        "position": {
+          "x": 91.11893,
+          "y": -135.5079,
+          "z": 186.7896
+        },
+        "isRelativeToParent": false
+      },
+      {
+        "identificationRadius": 1,
+        "onlyAudibleToScope": true,
+        "reveals": "",
+        "frequency": "DreamSignal",
+        "insideCloak": true,
+        "name": "Woodlands Signal",
+        "sourceRadius": 1.75,
+        "detectionRadius": 1,
+        "audio": "audio/test_audio_medium.wav",
+        "position": {
+          "x": -130.5715,
+          "y": -57.39866,
+          "z": -224.3061
+        },
+        "isRelativeToParent": false
+      },
+      {
+        "identificationRadius": 1,
+        "onlyAudibleToScope": true,
+        "reveals": "",
+        "frequency": "DreamSignal",
+        "insideCloak": true,
+        "detectionRadius": 1,
+        "audio": "audio/test_audio_high.wav",
+        "position": {
+          "x": 213.5892,
+          "y": -73.76805,
+          "z": -136.036
+        },
+        "isRelativeToParent": false,
+        "sourceRadius": 15,
+        "name": "Diving Bell"
+      }
+    ],
+    "dialogue": [
+      {
+        "range": 2,
+        "position": {
+          "x": 98.93724,
+          "y": -152.3555,
+          "z": -201.9177
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_Entrance.xml"
+      },
+      {
+        "range": 2,
+        "position": {
+          "x": 181.7885,
+          "y": 150.508,
+          "z": -148.1522
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_SignalBlocker.xml"
+      },
+      {
+        "range": 2,
+        "position": {
+          "x": 194.2958,
+          "y": -155.3197,
+          "z": 191.4111
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_SecretLab.xml"
+      },
+      {
+        "range": 2,
+        "position": {
+          "x": -240.5274,
+          "y": 41.44914,
+          "z": 104.6291
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_CodeRoom.xml",
+		    "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot/Interactibles_DreamFireLighthouse_Zone2/Pivot_CodeRoom"
+      },
+      {
+        "range": 2,
+        "position": {
+          "x": -241.5606,
+          "y": -66.89771,
+          "z": 150.1965
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_EyeShrine.xml"
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/ShipLogs/RingWorld.xml",
+    "spriteFolder": "planets/ShipLogs/sprites"
+  }
+}

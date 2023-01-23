@@ -1,0 +1,38 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>QUANTUM_MOON</ID>
+
+  <Entry>
+    <ID>QM_TRANSPORT_PILGRIM</ID>
+    <Name>Transport Pilgrim #2</Name>
+
+	<Curiosity>IP_DREAMWORLD_MAINFRAME</Curiosity>
+
+    <RumorFact>
+      <ID>QM_TRANSPORT_RUMOR_1</ID>
+      <SourceID>IP_DREAMWORLD_MAINFRAME</SourceID>
+      <RumorName>Transport Pilgrim 2</RumorName>
+      <Text>One of the Stranger's light spacecraft is currently in active transit to the Signal Capture Satellite.</Text>
+    </RumorFact>
+	<RumorFact>
+      <ID>QM_TRANSPORT_RUMOR_2</ID>
+      <SourceID>IP_DREAMWORLD_MAINFRAME</SourceID>
+      <RumorName>Transport Pilgrim 2</RumorName>
+      <Text>According to the Mainframe, the spacecraft is still broadcasting a distress signal, but the signal is too far away for the Stranger to detect it.</Text>
+    </RumorFact>
+
+
+	 <ExploreFact>
+		<ID>QM_TRANSPORT_MISSING</ID>
+		<Text>There is a light spacecraft missing from one of the Stranger's docking bays that is apparently active, but its location relative to the rest solar system is unknown.</Text>
+	</ExploreFact>
+    <ExploreFact>
+      <ID>QM_TRANSPORT_INFO</ID>
+      <Text>The nearest celestial body for an emergency landing based on the transport's last known location was the Wandering Moon, likely another term for the Quantum Moon.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>QM_TRANSPORT_SIXTHLOCATION</ID>
+      <Text>I can only detect the distress signal while standing on the Quantum Moon's sixth location, when the moon is in orbit around the Eye of the Universe.</Text>
+    </ExploreFact>
+
+  </Entry>
+</AstroObjectEntry>
