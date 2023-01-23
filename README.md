@@ -5,6 +5,6 @@
 
 Divergence is short story mod for Outer Wilds created entirely using New Horizons for the January 2023 New Horizons Jam. Discover a hidden secret that remains in the Hearthian system, and find an untold story of what might have been.
 
-##Disclaimer
+## Disclaimer
 
 This work is unofficial Fan Content created under permission from the Mobius Digital Fan Content Policy. It includes materials which are the property of Mobius Digital and it is neither approved nor endorsed by Mobius Digital.
