@@ -3,7 +3,7 @@
     "author": "artificialparanoia",
     "name": "Divergence",
     "uniqueName": "artificialparanoia.Divergence",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "owmlVersion": "2.1.0",
     "dependencies": [
         "xen.NewHorizons"
