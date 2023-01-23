@@ -1,0 +1,133 @@
+<DialogueTree>
+	<NameField>Acetate</NameField>
+
+	<DialogueNode>
+		<Name>AcetateIntro</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Heyo, traveler. Long time, no see. Well, I guess it's been a long time since I've seen anyone.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Acetate?</Text>
+				<DialogueTarget>Acetate_1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_1</Name>
+		<Dialogue>
+			<Page>That's me. Surprised that anyone else made it here, to be honest. It's good you came, too. I was starting to get lonely. How long has it been, do you know? Does it matter?</Page>
+			<Page>I always knew that us Hearthians would be the ones to find the Eye. Or at least I hoped so, anyhow.</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_1_Menu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_1_Menu</Name>
+		<Dialogue>
+			<Page>I suppose it didn't really have to be us, if you think about it. It could have been anyone. I'm happy that it was us though, because I don't think anyone else is going to top that.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>The Eye of the Universe is pretty high on the list in terms of discoveries, huh? </Text>
+				<DialogueTarget>Acetate_1a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I'm pretty sure Feldspar could.</Text>
+				<DialogueTarget>Acetate_1b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>At least it wasn't the anglerfish who found it first.</Text>
+				<DialogueTarget>Acetate_1c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_1a</Name>
+		<Dialogue>
+			<Page>Indeed it is. Not even the Nomai found it, and they're the *Nomai*. Kind of funny to think that we're literally the only ones here.</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_2</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_1b</Name>
+		<Dialogue>
+			<Page>Probably. They're Feldspar, of course they could. If they didn't go missing first, I bet they would've somehow stumbled onto it completely by accident.</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_2</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Acetate_1c</Name>
+		<Dialogue>
+			<Page>Oh gosh. Imagine. </Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_2</DialogueTarget>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>Acetate_2</Name>
+		<Dialogue>
+			<Page>...</Page>
+			<Page>I couldn't do it, you know. What's after this. I'm sure you know what I'm talking about, considering that you're here.</Page>
+     		<Page>I would have eventually done it, maybe, but not now. In retrospect I'm kind of glad you showed up. Makes it so I don't have to be the one responsible for it anymore. I know that makes me sound like a coward, but this is big stuff. Arguably the biggest stuff, to put it lightly.</Page>
+			<Page>I guess the reason it's hard for me is that it's a bit like... *pause* confronting your own death, in a way? You stand right at the edge of the abyss and contemplate what it means to be anything. You relive your whole life in the blink of an eye, all of the good and all of the bad, and you kinda just watch it drift away until it's not there anymore. And that's it. Isn't that weird? Really when you starting thinking about this it's *all* weird, but I guess that's kind of fitting. Terrifying, but fitting.</Page>
+			<Page>I understand why they couldn't let it go. All of this time I thought that they were evil, or cruel. But they weren't. They were terrified. One day we're given the awareness of being and then in the next it's taken away, and we don't have a choice in any of it. No one does.</Page>
+			<Page>Is it wrong to be afraid of that? Is it wrong for me to sit here and wonder if they're right? Sigh... I don't even know what I'm saying. I don't know what I want to say, really. I'm just thinking. You got stuff to do, I know, I know. But at least I appreciate you humoring me.</Page>
+			<Page>I think I'm probably just going to stay here for this next part, if that's okay? Not really cut out for this sort of thing. Always been good at starting, never been great at following through. Just how I roll.</Page>
+			<Page>Besides, I think if you took me with you, all I'd end up doing is ruining it. This is more your jam, honestly. I'm too sentimental.</Page>
+			<Page>...</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_2_Menu</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Acetate_2_Menu</Name>
+		<Dialogue>
+			<Page>Knock 'em dead for me, okay? You'll do great. Just try not to end up like me and miss the show, alright?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I promise.</Text>
+				<DialogueTarget>Acetate_2a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Are you sure want me to do this?</Text>
+				<DialogueTarget>Acetate_2b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Goodbye, Acetate.</Text>
+				<DialogueTarget>Acetate_Goodbye</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_2a</Name>
+		<Dialogue>
+			<Page>Good. It's only the end of everything, after all. Give it your best shot.</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_Goodbye</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Acetate_2b</Name>
+		<Dialogue>
+			<Page>No. But someone's gotta, right? Now go ahead and do it before I change my mind.</Page>
+		</Dialogue>
+		<DialogueTarget>Acetate_Goodbye</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Acetate_Goodbye</Name>
+		<Dialogue>
+			<Page>Goodbye, traveler. See you after the dust settles, whatever that may be.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

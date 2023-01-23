@@ -1,0 +1,45 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Eye Of The Universe",
+    "starSystem": "EyeOfTheUniverse",
+    "Props": {
+        "signals": [
+            {
+                "onlyAudibleToScope": true,
+                "reveals": "",
+                "name": "TransportPilgrimEYE",
+                "audio": "audio/test_audio_distress.wav",
+                "detectionRadius": 10000,
+                "frequency": "DreamSignal",
+                "position": {
+                    "x": -2.168599,
+                    "y": -476.3841,
+                    "z": -15.01326
+                },
+                "sourceRadius": 10,
+                "parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/SignalJammer_Pivot",
+                "identificationRadius": 2
+            }
+        ],
+        "dialogue": [
+            {
+                "range": 2,
+                "lookAtRadius": 0,
+                "radius": 0,
+                "position": {
+                    "x": -1400.169,
+                    "y": 12.41371,
+                    "z": 6000.025
+                },
+                "remoteTriggerPosition": {
+                    "x": -1400.169,
+                    "y": 12.41371,
+                    "z": 6000.025
+                },
+                "remoteTriggerRadius": 5,
+                "xmlFile": "planets/Dialogue/Acetate.xml",
+                "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
+            }
+        ]
+    }
+}
