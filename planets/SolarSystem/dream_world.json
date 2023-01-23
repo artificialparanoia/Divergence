@@ -217,20 +217,6 @@
         "details": [
             {
                 "scale": 1,
-                "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_GrappleTotem",
-                "position": {
-                    "x": 25.81277,
-                    "y": 20.46771,
-                    "z": 632.7317
-                },
-                "rotation": {
-                    "x": 338.5628,
-                    "y": 149.6011,
-                    "z": 6.287848
-                }
-            },
-            {
-                "scale": 1,
                 "path": "Sector_DreamWorld/Sector_DreamZone_2/Structure_DreamZone_2/DreamFireHouse_2/Interactibles_DreamFireHouse_2/Prefab_IP_DreamArrivalPoint_Zone2",
                 "position": {
                     "x": -31.18409,

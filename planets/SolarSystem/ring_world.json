@@ -68,24 +68,24 @@
         "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
         "removeComponents": true
       },
-      {
-        "scale": 1,
-        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
-        "keepLoaded": true,
-        "position": {
-          "x": 186.2138,
-          "y": 160.0338,
-          "z": -136.3331
-        },
-        "rotation": {
-          "x": -1.538961,
-          "y": 126.439,
-          "z": 180.0001
-        },
-        "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
-        "rename": "JammerNotes",
-        "removeComponents": true
-      },
+      //{
+      //  "scale": 1,
+      //  "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
+      //  "keepLoaded": true,
+      //  "position": {
+      //    "x": 186.2138,
+      //    "y": 160.0338,
+      //    "z": -136.3331
+      //  },
+      //  "rotation": {
+      //    "x": -1.538961,
+      //    "y": 126.439,
+      //    "z": 180.0001
+      //  },
+      //  "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
+      //  "rename": "JammerNotes",
+      //  "removeComponents": true
+      //},
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
@@ -106,11 +106,11 @@
     ],
     "signals": [
       {
-        "identificationRadius": 30,
+        "identificationRadius": 15,
         "onlyAudibleToScope": true,
         "reveals": "IP_TOWER_SIGNAL_MEDIUM",
         "frequency": "DreamSignal",
-        "detectionRadius": 50,
+        "detectionRadius": 30,
         "insideCloak": true,
         "position": {
           "x": -205.7789,
@@ -124,11 +124,11 @@
         "name": "\"Foresight\""
       },
       {
-        "identificationRadius": 30,
+        "identificationRadius": 15,
         "onlyAudibleToScope": true,
         "reveals": "IP_TOWER_SIGNAL_HIGH",
         "frequency": "DreamSignal",
-        "detectionRadius": 50,
+        "detectionRadius": 30,
         "insideCloak": true,
         "position": {
           "x": -204.9549,
@@ -142,11 +142,11 @@
         "name": "\"Enlightenment\""
       },
       {
-        "identificationRadius": 30,
+        "identificationRadius": 15,
         "onlyAudibleToScope": true,
         "reveals": "IP_TOWER_SIGNAL_LOW",
         "frequency": "DreamSignal",
-        "detectionRadius": 50,
+        "detectionRadius": 30,
         "insideCloak": true,
         "position": {
           "x": -213.0489,

@@ -48,7 +48,7 @@
 	<DialogueNode>
 		<Name>Acetate_1a</Name>
 		<Dialogue>
-			<Page>Indeed it is. Not even the Nomai found it, and they're the *Nomai*. Kind of funny to think that we're literally the only ones here.</Page>
+			<Page>Indeed it is. Not even the Nomai found it, and they're the <![CDATA[<i>]]>Nomai<![CDATA[</i>]]>. Kind of funny to think that we're literally the only ones here.</Page>
 		</Dialogue>
 		<DialogueTarget>Acetate_2</DialogueTarget>
 	</DialogueNode>
@@ -76,9 +76,9 @@
 			<Page>...</Page>
 			<Page>I couldn't do it, you know. What's after this. I'm sure you know what I'm talking about, considering that you're here.</Page>
      		<Page>I would have eventually done it, maybe, but not now. In retrospect I'm kind of glad you showed up. Makes it so I don't have to be the one responsible for it anymore. I know that makes me sound like a coward, but this is big stuff. Arguably the biggest stuff, to put it lightly.</Page>
-			<Page>I guess the reason it's hard for me is that it's a bit like... *pause* confronting your own death, in a way? You stand right at the edge of the abyss and contemplate what it means to be anything. You relive your whole life in the blink of an eye, all of the good and all of the bad, and you kinda just watch it drift away until it's not there anymore. And that's it. Isn't that weird? Really when you starting thinking about this it's *all* weird, but I guess that's kind of fitting. Terrifying, but fitting.</Page>
+			<Page>I guess the reason it's hard for me is that it's a bit like...<![CDATA[<Pause/>]]>confronting your own death, in a way? You stand right at the edge of the abyss and contemplate what it means to be anything. You relive your whole life in the blink of an eye, all of the good and all of the bad, and you kinda just watch it drift away until it's not there anymore. And that's it. Isn't that weird? Really when you starting thinking about this it's *all* weird, but I guess that's kind of fitting. Terrifying, but fitting.</Page>
 			<Page>I understand why they couldn't let it go. All of this time I thought that they were evil, or cruel. But they weren't. They were terrified. One day we're given the awareness of being and then in the next it's taken away, and we don't have a choice in any of it. No one does.</Page>
-			<Page>Is it wrong to be afraid of that? Is it wrong for me to sit here and wonder if they're right? Sigh... I don't even know what I'm saying. I don't know what I want to say, really. I'm just thinking. You got stuff to do, I know, I know. But at least I appreciate you humoring me.</Page>
+			<Page>Is it wrong to be afraid of that? Is it wrong for me to sit here and wonder if they're right? <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]> I don't even know what I'm saying. I don't know what I want to say, really. I'm just thinking. You got stuff to do, I know, I know. But at least I appreciate you humoring me.</Page>
 			<Page>I think I'm probably just going to stay here for this next part, if that's okay? Not really cut out for this sort of thing. Always been good at starting, never been great at following through. Just how I roll.</Page>
 			<Page>Besides, I think if you took me with you, all I'd end up doing is ruining it. This is more your jam, honestly. I'm too sentimental.</Page>
 			<Page>...</Page>
