@@ -24,17 +24,16 @@
         "alignToNormal": false,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "position": {
-          "x": -241.6993,
-          "y": -66.8933,
-          "z": 150.2968
+          "x": -4.9402,
+          "y": 0.9669,
+          "z": 4.0645
         },
-        //Shits fucked, innit bruv?
-        //"parentPath": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2",
-        //"isRelativeToParent": false,
+        "parentPath": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2",
+        "isRelativeToParent": true,
         "rotation": {
-          "x": 311.3875,
-          "y": 241.9171,
-          "z": 47.1383
+          "x": 357.7816,
+          "y": 148.554,
+          "z": 340.7469
         },
         "removeComponents": true
       },

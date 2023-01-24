@@ -348,16 +348,18 @@
           {
             "scale": 0.25,
             "position": {
-              "x": -31.1553,
-              "y": 30.8336,
-              "z": -185.9663
+              "x": 24.7386,
+              "y": 2.5228,
+              "z": 892.8373
             },
             "rotation": {
-              "x": 90,
-              "y": 238.635,
-              "z": 180
+              "x": 354.4057,
+              "y": 71.2594,
+              "z": 358.1145
             },
             "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch/Effects_IP_SIM_GhostBirdVisionConeFocused",
+            "parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
+            "isRelativeToParent": true,
             "keepLoaded": true
             //"isRelativeToParent": false
           }

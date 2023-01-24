@@ -24,7 +24,7 @@
     </ExploreFact>
 	  <ExploreFact>
 		  <ID>IP_MAINFRAME_CODECOMPUTERS</ID>
-		  <Text>I activated three "interfaces" which are apparently located in three different locations throughout the world. I'll have to calibrate all three of them correctly in order to gain any more information from the Mainframe.</Text>
+		  <Text>I activated three "interfaces" which are apparently located in three different locations within the Stranger's simulated reality. I'll have to calibrate all three of them correctly in order to gain any more information from the Mainframe.</Text>
 	  </ExploreFact>
 	<ExploreFact>
       <ID>IP_MAINFRAME_SIGNALBLOCKER</ID>
@@ -126,12 +126,12 @@
 		</RumorFact>
 
 		<ExploreFact>
-			<ID>IP_ENTRANCE_CELLAR</ID>
-			<Text>I saw a vision of someone opening a secret passage in a cellar, and watched them walk down to the very end of a dark hallway filled with murals. </Text>
-		</ExploreFact>
-		<ExploreFact>
 			<ID>IP_ENTRANCE_LAKE</ID>
 			<Text>I saw a vision of someone walking into the water after leaving their artifact on the shoreline near the sealed vault.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>IP_ENTRANCE_CELLAR</ID>
+			<Text>I saw a vision of someone opening a secret passage in a cellar, and watched them walk down to the very end of a dark hallway filled with murals. </Text>
 		</ExploreFact>
 	</Entry>
   
@@ -144,19 +144,19 @@
 
 	<ExploreFact>
 	   <ID>IP_ACETATE_LOG_ENTRANCE</ID>
-	   <Text>The missing Hearthian explorer, Acetate, stumbled upon the Stranger while scouting a location for the Deep Space Satellite. They managed to get inside, but destroyed their ship in the process, and as such decided to go further downstream in the hopes of accessing one of the Stranger's spacecraft.</Text>
+	   <Text>The missing Hearthian explorer, Acetate, stumbled upon the Stranger while scouting a location for the Deep Space Satellite. They managed to get inside, but destroyed their ship in the process, and as such decided to go to the tower further down the river in order to find a more central position for their camp.</Text>
 	</ExploreFact>
 	<ExploreFact>
 	   <ID>IP_ACETATE_LOG_SECRETLAB</ID>
-	   <Text>Acetate discovered something aboard the Stranger relating to a satellite, and implied that the Stranger's inhabitants wanted to keep it hidden. </Text>
+	   <Text>Acetate discovered something aboard the Stranger relating to the Signal Blocker, and implied that the Stranger's inhabitants wanted to keep it hidden. </Text>
 	 </ExploreFact>
 	 <ExploreFact>
 	   <ID>IP_ACETATE_LOG_SIGNALBLOCKER</ID>
-	   <Text>Acetate thought that the secret to reestablishing a connection to the Stranger's satellite lies inside of the sealed vault, but they were dismayed at the fact that there was seemingly no way to unlock it.</Text>
+	   <Text>Acetate thought that the secret to reestablishing a connection to the Signal Blocker lies inside of the sealed vault, but they were dismayed at the fact that the codes in the Cinder Isles were destroyed. They then decided to go get some rest at their "camp" near the top of the dam.</Text>
 	 </ExploreFact>
 	 <ExploreFact>
        <ID>IP_ACETATE_LOG_EYESHRINE</ID>
-	   <Text>Acetate seemed to suggest that they were close to figuring out a secret about the tower in the Cinder Isles, but that they were also missing too much information to be fully confident in their discovery.</Text>
+	   <Text>Acetate seemed to suggest that they were close to figuring out a secret about the tower in the Cinder Isles, and that they would leave a recording inside the tower's hidden code room with more information about their discovery.</Text>
 	 </ExploreFact>
      <ExploreFact>
        <ID>IP_ACETATE_LOG_CODEROOM</ID>
