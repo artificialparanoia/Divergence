@@ -146,7 +146,7 @@
     <Dialogue>
       <Page>Hello again!</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -155,11 +155,11 @@
     <Dialogue>
       <Page>Back so soon?</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
-    <Name>Curator13</Name>
+    <Name>Curator13_New</Name>
 	  <Dialogue>
 		  <Page>
 
@@ -196,7 +196,7 @@
       <Page>And... there’s Feldspar, obviously, but of course we don’t know where they are, or if they’re even still alive.</Page>
       <Page>Feldspar has been lost for a very long time, I’m afraid.</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -208,7 +208,7 @@
       <Page>And then one day, they just... didn’t come back. We don’t know what happened, or where Feldspar went, or even whether they’re still alive.</Page>
       <Page>It’s been a long time since they left.</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -220,7 +220,7 @@
       <Page>Ergh, sorry, that’s not a very scientific thing to say, is it? I <![CDATA[<i>]]>am<![CDATA[</i>]]> glad. I’m just also insufferably, <![CDATA[<i>]]>profoundly<![CDATA[</i>]]> jealous. You’ll have to forgive me.</Page>
       <Page>That aside - I have research to do! I wonder why the statue opened its eyes. Surely this means they aren’t mere decorative ornaments...?</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -231,7 +231,7 @@
       <Page>Still, we ought to fish them out of that dreadful place with all haste! I’ll radio Gossan and have them prepare a ship. It really should be Gossan who brings Feldspar home.</Page>
       <Page>Again, thank you. You can hardly imagine how profoundly happy I am to hear they’re alive and unharmed.</Page>
     </Dialogue>
-    <DialogueTarget>Curator13</DialogueTarget>
+    <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -263,7 +263,7 @@
 			<Page>Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.</Page>
 			<Page>Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13</DialogueTarget>
+		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
 
   <DialogueNode>
@@ -299,7 +299,7 @@
 	<Dialogue>
 	   <Page>Ah. Well, if you do come across anything in your travels that you feel is worth mentioning, I would love to hear it.</Page>
 	</Dialogue>
-	<DialogueTarget>Curator13</DialogueTarget>
+	<DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
@@ -312,7 +312,7 @@
   <!--Divergence-->
 
   <DialogueNode>
-    <Name>CuratorEyesOpenLoop2</Name>
+    <Name>CuratorEyesOpenLoop2_New</Name>
     <EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
 	<SetCondition>TalkedToCurator</SetCondition>
     <Dialogue>
@@ -348,7 +348,7 @@
 			<Page>Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety. Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!</Page>
 			<Page>Anyhow, enough about that. What about you? Anything you need before continuing your maiden voyage among the stars?</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13</DialogueTarget>
+		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
 
 	<DialogueNode>
@@ -359,7 +359,7 @@
 			<Page>Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out another time.</Page>
 			<Page>Was there something you needed?</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13</DialogueTarget>
+		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
 
 </DialogueTree>

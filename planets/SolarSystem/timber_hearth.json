@@ -89,6 +89,31 @@
                 },
                 "rename": "Villager_HEA_Hornfels_RadioTower"
             }
+        ],
+        "slideShows": [
+          {
+            "type": "slideReel",
+            "position": {
+              "x": -175.3125,
+              "y": 178.2045,
+              "z": 50.73273
+            },
+            "rotation": {
+              "x": 356.435,
+              "y": 249.9214,
+              "z": 357.4678
+            },
+            "slides": [
+              {
+                "ambientLightColor": {
+                  "a": 255
+                },
+                "imagePath": "graphics/slides/a_curse_on_you_and_your_family.png",
+                "backdropFadeTime": 1,
+                "backdropAudio": "audio/your_majesty.wav"
+              }
+            ]
+          }
         ]
     },
     "Volumes": {
@@ -130,8 +155,8 @@
             }
         ]
     },
-	"ShipLog": {
-    "xmlFile": "planets/ShipLogs/TimberHearth.xml",
-    "spriteFolder": "planets/ShipLogs/sprites"
-  }
+    "ShipLog": {
+        "xmlFile": "planets/ShipLogs/TimberHearth.xml",
+        "spriteFolder": "planets/ShipLogs/sprites"
+    }
 }
