@@ -182,9 +182,9 @@
             "uniqueID": "CanyonWarpEnd",
             "size": 2,
             "position": {
-              "x": 26.3176,
-              "y": 95.7388,
-              "z": 206.9578
+              "x": 28.51286,
+              "y": 65.3961,
+              "z": 237.6479
             },
             "pairedSingularity": "CanyonWarpStart",
             "rename": "CanyonWarpReceiver"
@@ -267,7 +267,6 @@
                 },
                 "parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Simulation_DreamZone_2/Effects_Zone2",
                 "keepLoaded": true,
-                "rename": "WarpIcon1"
             },
             {
                 "scale": 1,
@@ -315,9 +314,9 @@
           {
             "scale": 1,
             "position": {
-              "x": -3.5036,
-              "y": 10.3076,
-              "z": 698.916
+              "x": -26.85139,
+              "y": 22.86302,
+              "z": -185.9739
             },
             "rotation": {
               "x": 354.4057,
@@ -477,165 +476,166 @@
             "reveals": [ "IP_ENTRANCE_LAKE" ],
             "playWithShipLogFacts": [ "IP_ENTRANCE_LAKE" ]
           },
-            {
-                "type": "standingVisionTorch",
-                "position": {
-                    "x": -3.5036,
-                    "y": 10.3076,
-                    "z": 698.916
-                },
-                "rotation": {
-                    "x": 354.4057,
-                    "y": 47.4029,
-                    "z": 356.12
-                },
-                "slides": [
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(1).png",
-                        "backdropFadeTime": 2,
-                        "backdropAudio": "Reel_Secret_Backdrop_A",
-                        "blackFrameDuration": 0.25
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(2).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(3).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(4).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(5).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(6).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(7).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(8).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(9).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(10).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(11).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(12).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(13).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(14).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(15).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(16).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(17).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(18).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(19).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(20).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(21).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(22).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(23).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(24).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(25).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(26).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(27).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(28).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(29).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(30).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(31).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(32).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(33).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(34).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(35).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(36).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(37).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(38).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(39).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(40).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(41).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(42).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(43).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(44).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(45).png"
-                    },
-                    {
-                        "imagePath": "graphics/slides/cellar_warp/(46).png"
-                    }
-                ],
-              "parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
-              "reveals": [ "IP_ENTRANCE_CELLAR" ],
-              "playWithShipLogFacts": [ "IP_ENTRANCE_CELLAR" ]
-            }
+          {
+            "type": "standingVisionTorch",
+            "position": {
+              "x": 24.7386,
+              "y": 2.5228,
+              "z": 892.8373
+            },
+            "rotation": {
+              "x": 354.4057,
+              "y": 71.2594,
+              "z": 358.1145
+            },
+            "slides": [
+              {
+                "imagePath": "graphics/slides/cellar_warp/(1).png",
+                "backdropFadeTime": 2,
+                "backdropAudio": "Reel_Secret_Backdrop_A",
+                "blackFrameDuration": 0.25
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(2).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(3).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(4).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(5).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(6).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(7).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(8).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(9).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(10).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(11).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(12).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(13).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(14).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(15).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(16).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(17).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(18).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(19).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(20).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(21).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(22).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(23).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(24).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(25).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(26).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(27).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(28).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(29).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(30).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(31).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(32).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(33).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(34).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(35).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(36).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(37).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(38).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(39).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(40).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(41).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(42).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(43).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(44).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(45).png"
+              },
+              {
+                "imagePath": "graphics/slides/cellar_warp/(46).png"
+              }
+            ],
+            "parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
+            "isRelativeToParent":  true,
+            "reveals": [ "IP_ENTRANCE_CELLAR" ],
+            "playWithShipLogFacts": [ "IP_ENTRANCE_CELLAR" ]
+          }
         ]
     },
   "Volumes": {

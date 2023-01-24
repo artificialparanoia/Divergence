@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "RINGWORLD",
+  //"removeChildren": [ "Sector_RingInterior/Lights_RingInterior", "Sector_RingInterior/Geometry_RingInterior/Structure_IP_ArtificialSun/ArtificialSun_Bulb" ],
   "Props": {
     "details": [
       {
@@ -68,24 +69,24 @@
         "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
         "removeComponents": true
       },
-      //{
-      //  "scale": 1,
-      //  "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
-      //  "keepLoaded": true,
-      //  "position": {
-      //    "x": 186.2138,
-      //    "y": 160.0338,
-      //    "z": -136.3331
-      //  },
-      //  "rotation": {
-      //    "x": -1.538961,
-      //    "y": 126.439,
-      //    "z": 180.0001
-      //  },
-      //  "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
-      //  "rename": "JammerNotes",
-      //  "removeComponents": true
-      //},
+      {
+        "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
+        "keepLoaded": true,
+        "position": {
+          "x": 186.2138,
+          "y": 160.0338,
+          "z": -136.3331
+        },
+        "rotation": {
+          "x": -1.538961,
+          "y": 126.439,
+          "z": 180.0001
+        },
+        "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
+        "rename": "JammerNotes",
+        "removeComponents": true
+      },
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
