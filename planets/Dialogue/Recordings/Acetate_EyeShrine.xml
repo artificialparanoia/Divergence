@@ -10,7 +10,8 @@
 		<Dialogue>
 			<Page>I still don't exactly understand why they did a lot of the things that they did. Some of them I do, as strange as it sounds, but the rest of it still seems so foreign to me. </Page>
 			<Page>Did it betray them? Was what they saw so terrible that they had no choice but to denounce it wholly and completely? They burned it all down, and hid it all away. Who were they trying to hide it from? Was what they were doing purely out of fear, or were they somehow justified?</Page>
-			<Page>There's something about that tower that's the key to figuring out their secret. I don't completely know what yet, but there has to be more to all of this than it appears on the surface. There has to be. All I have to do is prove it.</Page>
+			<Page>There's something about the tower in the <![CDATA[<color=orange>Cinder Isles</color>]]> that's the key to figuring out their secret. I don't completely know what yet, but there has to be more to all of this than it appears on the surface. The fact that the codes are gone in <![CDATA[<i>]]>both<![CDATA[</i>]]> places is what's bugging me, because while I understand them being gone here, what I don't understand them not being <![CDATA[<i>]]>anywhere<![CDATA[</i>]]>. I'll leave a log in the tower's code room with anything else I find.</Page>
+			<Page>The <![CDATA[<color=orange>signal blocker</color>]]>. The <![CDATA[<color=orange>lab</color>]]>. The dreams. There's something else connecting them besides the vault, I just have to figure out what.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
