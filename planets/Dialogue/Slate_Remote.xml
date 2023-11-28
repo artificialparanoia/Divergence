@@ -6,9 +6,7 @@
 		<EntryCondition>DEFAULT</EntryCondition>
 		<SetPersistentCondition>HORNFELS_CLUE</SetPersistentCondition>
 		<Dialogue>
-			<Page>
-				Oh yeah, by the way, Hornfels wanted to talk to you. Said they wanted to mention something real quick while you're up there for the launch codes. No idea what it was about.
-			</Page>
+			<Page>Oh yeah, by the way, Hornfels wanted to talk to you. Said they wanted to mention something real quick while you're up there for the launch codes. No idea what it was about.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
