@@ -54,6 +54,22 @@
       },
       {
         "scale": 1,
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/Interactables_StaticGeo/OtherComponentsGroup/Props_HEA_FlightChair",
+        "position": {
+          "x": 47.0626,
+          "y": -124.2875,
+          "z": -290.8289
+        },
+        "rotation": {
+          "x": 41.6217,
+          "y": 5.6875,
+          "z": 21.5455
+        },
+        "parentPath": "Sector_RingWorld",
+        "isRelativeToParent": true
+      },
+      {
+        "scale": 1,
         "alignToNormal": false,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "position": {
