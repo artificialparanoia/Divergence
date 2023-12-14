@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2689704538
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2713c863ac1f8c20f7ffdb436fdf3526
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f562b365ba45a9260cf3b374a06b51a7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Props_HEA_FlightChair_Collider.prefab
+Dependencies: []
