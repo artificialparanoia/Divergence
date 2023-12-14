@@ -331,13 +331,13 @@
           {
             "scale": 1,
             "position": {
-              "x": -27.8238,
-              "y": 33.9664,
-              "z": -191.37
+              "x": -29.926,
+              "y": 33.7664,
+              "z": -179.7224
             },
             "rotation": {
               "x": 354.8344,
-              "y": 317.5115,
+              "y": 180,
               "z": 0
             },
             "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
@@ -466,13 +466,13 @@
               }
             ],
             "position": {
-              "x": -27.8238,
-              "y": 33.9664,
-              "z": -191.37
+              "x": -29.926,
+              "y": 33.7664,
+              "z": -179.7224
             },
             "rotation": {
               "x": 354.8344,
-              "y": 317.5115,
+              "y": 180,
               "z": 0
             },
             "reveals": [ "IP_ENTRANCE_LAKE" ],
