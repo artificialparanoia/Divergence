@@ -21,36 +21,25 @@
       },
       {
         "scale": 1,
-        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/Interactables_StaticGeo/OtherComponentsGroup/Props_HEA_FlightChair",
         "position": {
-          "x": -0.0889,
-          "y": -294.0193,
-          "z": -123.9802
+          "x": 73.7935,
+          "y": 126.1682,
+          "z": -285.215
         },
         "rotation": {
-          "x": 2.7096,
-          "y": 71.6726,
-          "z": 277.9303
-        },
-        "removeComponents": true,
-        "parentPath": "Sector_RingWorld/Sector_DarkSideDockingBay",
-        "isRelativeToParent": true
-      },
-      {
-        "scale": 1,
-        "path": "FeldsparShip_Body/Prefab_HEA_FeldsparShip",
-        "position": {
-          "x": 60.9559,
-          "y": 156.4935,
-          "z": -287.5663
-        },
-        "rotation": {
-          "x": 0.7455,
-          "y": 347.271,
-          "z": 22.4091
+          "x": 321.1783,
+          "y": 358.6875,
+          "z": 159.5455
         },
         "parentPath": "Sector_RingWorld",
         "isRelativeToParent": true
+      },
+      {
+          "assetBundle": "planets/assetbundles/divergence",
+          "path": "Assets/Props_HEA_FlightChair_Collider.prefab",
+          "parentPath": "Sector_RingWorld/Props_HEA_FlightChair",
+          "isRelativeToParent": true
       },
       {
         "scale": 1,
