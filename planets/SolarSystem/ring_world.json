@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "RINGWORLD",
-  "removeChildren": [ "Sector_RingInterior/Lights_RingInterior", "Sector_RingInterior/Geometry_RingInterior/Structure_IP_ArtificialSun/ArtificialSun_Bulb" ],
+  //"removeChildren": [ "Sector_RingInterior/Lights_RingInterior", "Sector_RingInterior/Geometry_RingInterior/Structure_IP_ArtificialSun/ArtificialSun_Bulb" ],
   "Props": {
     "details": [
       {
