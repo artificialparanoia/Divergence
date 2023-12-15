@@ -301,8 +301,8 @@
 		<Dialogue>
 			<Page>Broadcasting location of Signal Capture Satellite...</Page>
 			<Page>Broadcasting location of Signal Capture Satellite to...</Page>
-			<Page>Transport Pilgrim #1: DOCKED<![CDATA[\\n]]>Transport Pilgrim #2: ACTIVE (IN TRANSIT)<![CDATA[\\n]]>Transport Pilgrim #3: DOCKED<![CDATA[\\n]]>Transport Pilgrim #4: DOCKED</Page>
-			<Page>Transport Pilgrim #5: DOCKED <![CDATA[\\n]]>Transport Pilgrim #6: DOCKED<![CDATA[\\n]]>Transport Pilgrim #7: DOCKED<![CDATA[\\n]]>Transport Pilgrim #8: DOCKED</Page>
+			<Page>Transport Pilgrim #1: DOCKED, Transport Pilgrim #2: ACTIVE (IN TRANSIT), Transport Pilgrim #3: DOCKED, Transport Pilgrim #4: DOCKED</Page>
+			<Page>Transport Pilgrim #5: DOCKED, Transport Pilgrim #6: DOCKED, Transport Pilgrim #7: DOCKED, Transport Pilgrim #8: DOCKED</Page>
 			<Page>WARNING: <![CDATA[<color=orange>Transport Pilgrim #2</color>]]> is currently in emergency mode! Distress signal is active but is currently out of range.</Page>
 		</Dialogue>
 		<DialogueTarget>TransportFound</DialogueTarget>

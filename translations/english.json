@@ -8,5 +8,10 @@
 		"Diving Bell" : "Diving Bell",
 		"TransportPilgrimQM" : "Transport Pilgrim #2",
 		"TransportPilgrimEYE" : "Transport Pilgrim #2"
-	}
+	},
+    "DialogueDictionary":
+    {
+        "Transport Pilgrim #1: DOCKED, Transport Pilgrim #2: ACTIVE (IN TRANSIT), Transport Pilgrim #3: DOCKED, Transport Pilgrim #4: DOCKED": "Transport Pilgrim #1: DOCKED\nTransport Pilgrim #2: ACTIVE (IN TRANSIT)\nTransport Pilgrim #3: DOCKED\nTransport Pilgrim #4: DOCKED",
+        "Transport Pilgrim #5: DOCKED, Transport Pilgrim #6: DOCKED, Transport Pilgrim #7: DOCKED, Transport Pilgrim #8: DOCKED": "Transport Pilgrim #5: DOCKED\nTransport Pilgrim #6: DOCKED\nTransport Pilgrim #7: DOCKED\nTransport Pilgrim #8: DOCKED"
+    }
 }
