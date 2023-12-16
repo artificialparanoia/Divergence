@@ -53,9 +53,9 @@
         "parentPath": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2",
         "isRelativeToParent": true,
         "rotation": {
-          "x": 357.7816,
-          "y": 148.554,
-          "z": 340.7469
+          "x": 359.9679,
+          "y": 188.811,
+          "z": 358.1896
         },
         "removeComponents": true
       },
@@ -90,24 +90,24 @@
         "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
         "removeComponents": true
       },
-      {
-        "scale": 1,
-        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
-        "keepLoaded": true,
-        "position": {
-          "x": 186.2138,
-          "y": 160.0338,
-          "z": -136.3331
-        },
-        "rotation": {
-          "x": -1.538961,
-          "y": 126.439,
-          "z": 180.0001
-        },
-        "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
-        "rename": "JammerNotes",
-        "removeComponents": true
-      },
+      //{
+      //  "scale": 1,
+      //  "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
+      //  "keepLoaded": true,
+      //  "position": {
+      //    "x": 186.2138,
+      //    "y": 160.0338,
+      //    "z": -136.3331
+      //  },
+      //  "rotation": {
+      //    "x": -1.538961,
+      //    "y": 126.439,
+      //    "z": 180.0001
+      //  },
+      //  "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
+      //  "rename": "JammerNotes",
+      //  "removeComponents": true
+      //},
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
@@ -117,9 +117,9 @@
           "z": -1.9173
         },
         "rotation": {
-          "x": 354.4117,
-          "y": 194.5741,
-          "z": 43.5149
+          "x": 0.1952,
+          "y": 162.0983,
+          "z": 0.0945
         },
         "parentPath": "Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot/Interactibles_DreamFireLighthouse_Zone2/Pivot_CodeRoom",
         "isRelativeToParent": true,
