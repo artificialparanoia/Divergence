@@ -1,0 +1,16 @@
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>AcetateLogShipBay</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<RevealFacts>
+			<FactID>IP_ACETATE_LOG_SHIPBAY</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Well, what do you know? For all the genius of Hearthian ingenuity, all that's left of my ship after its unfortunate demise is the chair. The <![CDATA[<i>]]>chair<![CDATA[</i>]]>. Can you believe that?</Page>
+			<Page>It's probably the most flammable thing in the entire ship, and yet somehow I found it floating around out there without so much as a scratch on it. I mean it withstood the reactor blowing up right next to it without so much as a <![CDATA[<i>]]>burn<![CDATA[</i>]]>. It's ridiculous. <![CDATA[<i>]]>And no, Slate, more reactor power does not mean "more better", it just means I don't have a ship anymore. So thanks for that.<![CDATA[</i>]]></Page>
+			<Page>I'll have to haul it up to my camp <![CDATA[<color=orange>at the top of the dam</color>]]> when I get the chance, but considering that's on the complete opposite side of this thing I figure that'll be a while. For now it'll just sit here ominously to scare the newcomers. <![CDATA[<Pause/>]]>Like you. <![CDATA[<Pause/>]]><![CDATA[<b>]]>Boo! <![CDATA[</b>]]><![CDATA[<size=20>]]>Gotcha, didn't I?<![CDATA[</size>]]></Page>
+			<Page>Hope you're not afraid of ghosts, because this chair is definitely haunted. This whole place is <![CDATA[<i>]]>super<![CDATA[</i>]]> haunted, but so is this chair. I don't trust it.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

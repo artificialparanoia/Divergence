@@ -36,14 +36,28 @@
         "isRelativeToParent": true
       },
       {
-          "assetBundle": "planets/assetbundles/divergence",
-          "path": "Assets/Props_HEA_FlightChair_Collider.prefab",
-          "parentPath": "Sector_RingWorld/Props_HEA_FlightChair",
-          "isRelativeToParent": true
+        "assetBundle": "planets/assetbundles/divergence",
+        "path": "Assets/Props_HEA_FlightChair_Collider.prefab",
+        "parentPath": "Sector_RingWorld/Props_HEA_FlightChair",
+        "isRelativeToParent": true
       },
       {
         "scale": 1,
-        "alignToNormal": false,
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "position": {
+          "x": 74.06075,
+          "y": 123.9663,
+          "z": -284.5028
+        },
+        "rotation": {
+          "x": 313.2759,
+          "y": 76.16434,
+          "z": 89.04352
+        },
+        "removeComponents": true
+      },
+      {
+        "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "position": {
           "x": -4.9402,
@@ -284,6 +298,16 @@
         },
         "radius": 2,
         "xmlFile": "planets/Dialogue/Recordings/Acetate_EyeShrine.xml"
+      },
+      {
+        "range": 2,
+        "position": {
+          "x": 74.06075,
+          "y": 123.9663,
+          "z": -284.5028
+        },
+        "radius": 2,
+        "xmlFile": "planets/Dialogue/Recordings/Acetate_ShipBay.xml"
       }
     ]
   },

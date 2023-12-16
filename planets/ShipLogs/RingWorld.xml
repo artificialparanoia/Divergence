@@ -147,6 +147,10 @@
 	   <Text>The missing Hearthian explorer, Acetate, stumbled upon the Stranger while scouting a location for the Deep Space Satellite. They managed to get inside, but destroyed their ship in the process, and as such decided to go to the tower further down the river in order to find a more central position for their camp.</Text>
 	</ExploreFact>
 	<ExploreFact>
+       <ID>IP_ACETATE_LOG_SHIPBAY</ID>
+       <Text>Acetate managed to miraculously recover the pilot seat from their ship, but decided that it wasn't worth the effort to haul it to their camp at the top of the dam.</Text>
+    </ExploreFact>
+	<ExploreFact>
 	   <ID>IP_ACETATE_LOG_SECRETLAB</ID>
 	   <Text>Acetate discovered something aboard the Stranger relating to the Signal Blocker, and implied that the Stranger's inhabitants wanted to keep it hidden. </Text>
 	 </ExploreFact>
