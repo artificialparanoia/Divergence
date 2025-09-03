@@ -355,7 +355,7 @@ namespace Divergence {
             {
                 if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
                 {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "SUBTERRANEAN LAKE:{{SUBTERRANEAN_LAKE_STATE}}";
+                    TextTranslation.s_theTable.m_table.theTable[key] = "地底湖:{{SUBTERRANEAN_LAKE_STATE}}";
                 }
                 else
                 {
@@ -368,7 +368,7 @@ namespace Divergence {
                 "VerifySim_Signal{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.",
             }) {
                 if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "模擬現実の完全性は{{SIMULATION_OCCUPANTS}}。{{SIMULATION_MODULES_STATE}}";
+                    TextTranslation.s_theTable.m_table.theTable[key] = "模擬現実には現在{{SIMULATION_OCCUPANTS}}人のユーザがいます。{{SIMULATION_MODULES_STATE}}";
                 }
                 else {
                     TextTranslation.s_theTable.m_table.theTable[key] = "{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.";
@@ -421,7 +421,7 @@ namespace Divergence {
                     string damState;
                     if(collapsed) {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            damState = $"0%(崩壊)";
+                            damState = $"0% [致命的な問題]";
                         }
                         else {
                             damState = $"0% [CATASTROPHIC FAILURE]";
@@ -432,10 +432,10 @@ namespace Divergence {
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            damState = $"{(int)damIntegrity}.{UnityEngine.Random.Range(0, 10)}{UnityEngine.Random.Range(0, 10)}%(損傷検出)";
+                            damState = $"{(int)damIntegrity}.{UnityEngine.Random.Range(0, 10)}{UnityEngine.Random.Range(0, 10)}% [損傷検出]";
                         }
                         else {
-                            damState = $"{(int)damIntegrity}.{UnityEngine.Random.Range(0, 10)}{UnityEngine.Random.Range(0, 10)}% (DAMAGE DETECTED)";
+                            damState = $"{(int)damIntegrity}.{UnityEngine.Random.Range(0, 10)}{UnityEngine.Random.Range(0, 10)}% [DAMAGE DETECTED]";
                         }
                     }
                     __result = __result.Replace("{{DAM_INTEGRITY}}", damState);
@@ -444,11 +444,16 @@ namespace Divergence {
                     var ok = _dreamCampfireZone2 ? _dreamCampfireZone2._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK [10 occupants]";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
+                            state = "OK [ユーザ数10]";
+                        }
+                        else {
+                            state = "OK [10 occupants]";
+                        }
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            state = "炎に致命的なエラー";
+                            state = "エラー [ユーザ数0]";
                         }
                         else {
                             state = "ERROR [0 occupants]";
@@ -460,11 +465,16 @@ namespace Divergence {
                     var ok = _dreamCampfireZone1 ? _dreamCampfireZone1._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK [11 occupants]";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
+                            state = "OK [ユーザ数11]";
+                        }
+                        else {
+                            state = "OK [11 occupants]";
+                        }
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            state = "炎に致命的なエラー";
+                            state = "エラー [ユーザ数0]";
                         }
                         else {
                             state = "ERROR [0 occupants]";
@@ -478,13 +488,18 @@ namespace Divergence {
                     string state;
                     if (ok)
                     {
-                        state = "OK [1 occupant]";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
+                            state = "OK [ユーザ数1]";
+                        }
+                        else {
+                            state = "OK [1 occupant]";
+                        }
                     }
                     else
                     {
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
                         {
-                            state = "炎に致命的なエラー";
+                            state = "OK [ユーザ数0]";
                         }
                         else
                         {
@@ -499,7 +514,7 @@ namespace Divergence {
                     if (_dreamCampfireZone1 && _dreamCampfireZone1._state == Campfire.State.LIT && _prisonerArtifactFire._gameplayActive == true) {
                         integrity = "34";
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            state = "すべてのモジュールが安定しています。";
+                            state = "すべてのユーザグループが安定しています。";
                         }
                         else {
                             state = "All population groups stable";
@@ -510,7 +525,7 @@ namespace Divergence {
                         integrity = "33";
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
                         {
-                            state = "すべてのモジュールが安定しています。";
+                            state = "注意:ユーザグループ地底湖のユーザが見つかりません。";
                         }
                         else
                         {
@@ -522,7 +537,7 @@ namespace Divergence {
                         integrity = "23";
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
                         {
-                            state = "注意:1つのモジュールにエラーが発生しています。";
+                            state = "エラー:ユーザグループ覆われた森林地帯のユーザが見つかりません。";
                         }
                         else
                         {
@@ -532,7 +547,7 @@ namespace Divergence {
                     else if (_dreamCampfireZone2 && _dreamCampfireZone2._state == Campfire.State.LIT) {
                         integrity = "22";
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            state = "注意:1つのモジュールにエラーが発生しています。";
+                            state = "エラー:ユーザグループ覆われた森林地帯と地底湖のユーザが見つかりません。";
                         }
                         else {
                             state = "ERROR: No occupants found for population group(s) Shrouded Woodlands and Subterranean Lake";
@@ -541,7 +556,7 @@ namespace Divergence {
                     else if (_prisonerArtifactFire._gameplayActive == true) {
                         integrity = "13";
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                            state = "注意:2つのモジュールにエラーが発生しています。";
+                            state = "エラー:ユーザグループ覆われた森林地帯と星明かりの入り江のユーザが見つかりません。";
                         }
                         else {
                             state = "ERROR: No occupants found for population group(s) Shrouded Woodlands and Starlit Cove";
@@ -552,7 +567,7 @@ namespace Divergence {
                         integrity = "12";
                         if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
                         {
-                            state = "注意:2つのモジュールにエラーが発生しています。";
+                            state = "エラー:ユーザグループ覆われた森林地帯と地底湖と星明かりの入り江のユーザが見つかりません。";
                         }
                         else
                         {
