@@ -4,7 +4,7 @@
   "author": "artificialparanoia",
   "name": "Divergence",
   "uniqueName": "artificialparanoia.Divergence",
-  "version": "1.5.0-pr.1",
+  "version": "1.5.0",
   "owmlVersion": "2.15.4",
   "dependencies": [ "xen.NewHorizons" ],
   "conflicts": [ "orclecle.TinyPatchForDivergence" ]
